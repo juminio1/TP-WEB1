@@ -1,6 +1,6 @@
 ﻿body {
     display: flex;
-    
+
     flex-direction: column;
     min-height: 100vh;
 
@@ -11,31 +11,32 @@
     background-image: repeating-linear-gradient(#bd8c3e, #605e43, #5394b1, #bd8c3e)
 }
 
-html {
-    
-    padding: 0%;
+* {
     margin: 0%;
-    
-
 }
 
 .estiloHeaderppal {
     display: flex;
-    background-color: #D9D59A;
+    background-color: #020405;
     flex-direction: row;
-    height: 600px;
+    height: 100%;
     padding: 5%;
     align-content: stretch;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    
 
 }
 
-#logo{
-width: 10
+#logo {
+    width: 10 0%;
+}
 
-0%;
+.buscador {
+    display: inline-flex;
+    border: solid;
+    border-radius: 50px;
 }
 
 .iconos {
@@ -58,9 +59,10 @@ width: 10
 .iconosTres {
     display: flex;
     margin-left: 10%;
-    
+
 }
-.iconoCuatro{
+
+.iconoCuatro {
 
     display: flex;
     margin-left: 20%;
@@ -131,18 +133,20 @@ width: 10
 }
 
 #seccion-categoria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 🔹 3 columnas */
-  gap: 25px; /* separación entre las tarjetas */
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 🔹 3 columnas */
+    gap: 25px;
+    /* separación entre las tarjetas */
+    padding: 20px;
 }
 
 .articulo-categoria {
-  background-color: #e58cf7; /* violeta, como en tu diseño */
-  border-radius: 20px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
+    background-color: #D9D59A;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 
@@ -177,11 +181,12 @@ article {
 
 }
 
-.item-valor-portada{
+.item-valor-portada {
     display: flex;
     width: 100%;
     height: 70%;
 }
+
 .section {
 
     height: fit-content;
@@ -280,10 +285,10 @@ p {
 
 .nav {
     /* background-image: url(/assets/img/superheroes_fondo_nav.png);*/
-    display: flex;
+   /* display: flex;
     flex-direction: row;
     height: max-content;
-    width: auto;
+    width: 100%;
     position: relative;
     border-width: 5px;
     background-color: #bd8c3e;
@@ -292,7 +297,31 @@ p {
     align-items: stretch;
     background-color: #bd8c3e;
     align-content: space-around;
+
+
+     /* ... Tus propiedades existentes ... */
+    
+    /* ¡Añade o confirma esta línea! */
+    width: 100%; 
+    
+    /* ... Tus otras propiedades (display: flex, etc.) ... */
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    
+    position: relative;
+    border-width: 5px;
+    background-color: #bd8c3e; /* El color marrón/dorado */
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    background-color: #bd8c3e;
+    align-content: space-around;
+
+
+    
 }
+
 
 #superheroes {
     align-content: center;
