@@ -16,6 +16,7 @@
 }
 
 .estiloHeaderppal {
+    /*
     display: flex;
     background-color: #020405;
     flex-direction: row;
@@ -25,7 +26,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
+    */
+
+    display: flex;
+    background-color: #020405;
+    flex-direction: row;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    min-height: fit-content;
 
 }
 
@@ -329,4 +341,9 @@ p {
     color-scheme: black;
 
 
+}
+@media (max-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
 }
