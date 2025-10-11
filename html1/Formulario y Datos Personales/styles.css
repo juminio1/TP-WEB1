@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario{
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 380px;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+
+.form-contraseña{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.ojo-mostrar{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    padding: 0;
+
+}
+
+.recuperar-contraseña{
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.boton-azul{
+    width: 100%;
+    padding: 15px;
+    background-color: #007b;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer; /* pone la manito en el cursos para hacer clic*/
+    font-size: 16px;
+    font-weight: bold; /* ensancha la letra*/
+    letter-spacing: 0.5px; /* especio entre letras*/
+    margin-bottom: 20px;
+}
+
+.registrarse{
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.terminos-condiciones{
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4; /* separa , interlineado*/
+    
+}
+
+a{
+    color: #007bff;
+    text-decoration: none; /* le saca el subyarado a los href*/
+}
+
+a:hover{
+    text-decoration: underline; /* al posicionarse en los href aparece el subrayado*/
+}
+
+.texto-indica{
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5; /* Interlineado */
+    margin-bottom: 25px;
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div class="login">
+        <h2>Registrarse</h2>
+
+        <form action="">
+
+            <div class="form-email">
+                <input type="email" id="email" name="email" placeholder="Email*">
+            </div>
+            <br>
+
+            <div class="form-contraseña">
+                <input type="password" id="password" name="password" placeholder="Contraseña*">
+                <button type="button" id="mostrar" class="ojo-mostrar">👁</button>
+            </div>
+            <br>
+
+            <div>
+                <a href="recuperar contraseña" class="recuperar-contraseña">¿olvidaste tu contraseña?</a>
+            </div>
+            <br>
+
+            <div>
+                <button type="submit" class="boton-login">REGISTRATE</button>
+            </div>
+
+            <p class="registrarse">¿Ya tenés cuenta? <a href="registrate"> Inicia sesión</a></p>
+            <p class="terminos-condiciones">
+                Al continuar, confirmo que he leído los
+                <a href="terminosYcondiciones">Terminos y Condiciones</a> y las
+                <a href="politicas">Políticas de Privacidad</a>
+            </p>
+
+        </form>
+    </div>
+
+
+    <script>
+        // otro Capturo elementos
+        const passwordInput = document.getElementById('password');
+        const mostrar = document.getElementById('mostrar');
+
+        // otro Agrego evento click al ojito
+        mostrar.addEventListener('click', function () {
+            // otro Si está oculto (type=password), lo muestro
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+body {
+    background-color: white;
+}
+
+.sectionUsuario {
+    border-style: solid;
+    border-width: 10%;
+    border-bottom: 0;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: whit;
+    height: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.sectionDatosPersonales {
+    border-style: solid;
+    border-width: 10%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: :-moz-only-whitespace;
+    height: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.divContenedor {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+}
+
+input {
+    display: flex;
+}
+.botonGuardar{
+    width: max-content;
+    padding-right: 20%;
+    align-content: center;
+    height: 10%;
+    font-weight: bolder;
+    background-color: #1892c9;
+    color: white;
+}
+
+
+
+.divDatosTitulos {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: fit-content;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.divDatos {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+input {
+    height: 40px;
+    width: 250px;
+}
