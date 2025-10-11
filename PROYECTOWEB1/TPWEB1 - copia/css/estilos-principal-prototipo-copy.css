@@ -25,11 +25,12 @@ body {
     z-index: 999;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);*/
     display: flex;
+    position: relative;
     background-color: #D9D59A;
     flex-direction: row;
     max-height: fit-content;
     flex-wrap: wrap;
-    padding: ;
+    padding: 10px ;
     align-content: center;
     justify-content: space-between;
     align-items: center;

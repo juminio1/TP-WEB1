@@ -351,12 +351,14 @@ background-color: #bd8c3e;
     
     /* Asegura que el texto esté en mayúsculas como en tu imagen */
     text-transform: uppercase;
+
+    border: none;
 }
 
 .inputNav:hover {
     background-color: #f0e68c; 
     color: #333; 
-    cursor: 
+    
 }
 
 #superheroes {
