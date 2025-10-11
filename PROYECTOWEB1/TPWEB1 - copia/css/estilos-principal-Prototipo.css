@@ -249,28 +249,22 @@ footer {
     font-size: small;
     color: white;
 }
-
-a:hover {
-    color: #5394b1;
-    text-decoration: underline;
-}
-
 a {
     color: white;
-
+    
 }
 
 #footerCenter {
     display: flex;
     flex-direction: column;
     text-align: justify;
-
+    
 }
 
 span {
     display: contents;
     flex-direction: row;
-
+    
 }
 
 #footerRight {
@@ -281,7 +275,7 @@ span {
     align-items: start;
     align-content: center;
     gap: 15px;
-
+    
 }
 
 p {
@@ -291,13 +285,13 @@ p {
     align-items: anchor-center;
     align-content: space-between;
     flex-wrap: nowrap;
-
+    
 }
 
 
 .nav {
     /* background-image: url(/assets/img/superheroes_fondo_nav.png);*/
-   /* display: flex;
+    /* display: flex;
     flex-direction: row;
     height: max-content;
     width: 100%;
@@ -309,9 +303,9 @@ p {
     align-items: stretch;
     background-color: #bd8c3e;
     align-content: space-around;
-
-
-     /* ... Tus propiedades existentes ... */
+    
+    
+    /* ... Tus propiedades existentes ... */
     
     /* ¡Añade o confirma esta línea! */
     width: 100%; 
@@ -329,17 +323,47 @@ p {
     align-items: stretch;
     background-color: #bd8c3e;
     align-content: space-around;
-
-
+    
+    
     
 }
 
+.inputNav{
+
+background-color: #bd8c3e;
+   /* Muestra el enlace como un bloque para poder darle ancho y alto */
+    display: block; 
+    
+    /* Centra el texto */
+    text-align: center;
+    
+    /* Quita el subrayado típico de los enlaces */
+    text-decoration: none; 
+    
+    /* Color del texto (ajusta según tu diseño) */
+    color: rgb(0, 0, 0); 
+    
+    /* Padding para darle "cuerpo" al botón */
+    padding: 10px 15px; 
+    
+    /* El color de fondo normal del botón (ajusta si es diferente al nav) */
+    background-color: transparent; 
+    
+    /* Asegura que el texto esté en mayúsculas como en tu imagen */
+    text-transform: uppercase;
+}
+
+.inputNav:hover {
+    background-color: #f0e68c; 
+    color: #333; 
+    cursor: 
+}
 
 #superheroes {
     align-content: center;
     width: max-content;
     color-scheme: black;
-
+    
 
 }
 @media (max-width: 768px) {
