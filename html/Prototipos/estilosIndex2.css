@@ -154,6 +154,8 @@
 }
 
 .articulo-categoria {
+    max-width: max-content;
+    
     background-color: #D9D59A;
     border-radius: 20px;
     padding: 15px;
