@@ -17,19 +17,27 @@ body {
     background-image: repeating-linear-gradient(#bd8c3e, #605e43, #5394b1, #bd8c3e)
 }
 
+
+
 .estiloHeaderppal {
-    /*position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);*/
+    /*
     display: flex;
-    background-color: #D9D59A;
+    background-color: #020405;
+    flex-direction: row;
+    height: 100%;
+    padding: 5%;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    */
+
+    display: flex;
+    background-color: #020405;
     flex-direction: row;
     max-height: fit-content;
     flex-wrap: wrap;
-    padding: ;
+    padding: 10px;
     align-content: center;
     justify-content: space-around;
     align-items: center;
@@ -145,20 +153,23 @@ body {
     height: 100%;
     width: max-content;
     display: flex;
-    justify-content: space-around;
+    /*  justify-content: space-around*/
     position: relative;
-    align-items: stretch;
-    flex-wrap: wrap;
+    align-items: center;
     flex-direction: column;
 }
 
 .imgDiv {
+    border-radius: 80px;
+    margin: 20px;
     width: 100%;
     height: 100%;
 }
 
-.divNav:hover {
-    width: 100%;
+.imgDiv:hover {
+    width: 120%;
+    height: 120%;
+    align-items: center;
     background-color: #539466;
 }
 
@@ -297,14 +308,15 @@ span {
     flex-wrap: nowrap;
     align-self: auto;
     flex-direction: row;
-    align-items: start;
-    align-content: center;
-    gap: 15px;
+    margin-bottom: -20px;
+    align-items: center;
+    align-content: space-around;
+}
 
 }
 
 p {
-    display: flex;
+    display: inline-flex;
     font-size: smaller;
     justify-content: space-around;
     align-items: anchor-center;
