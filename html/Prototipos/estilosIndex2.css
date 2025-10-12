@@ -157,7 +157,7 @@
 
 .articulo-categoria {
     max-width: max-content;
-    
+
     background-color: #D9D59A;
     border-radius: 20px;
     padding: 15px;
@@ -198,8 +198,7 @@ article {
 }
 
 .item-valor-portada {
-    display: flex
-;
+    display: flex;
     width: 100%;
     height: 70%;
     flex-direction: row;
@@ -259,22 +258,23 @@ footer {
     font-size: small;
     color: white;
 }
+
 a {
     color: white;
-    
+
 }
 
 #footerCenter {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    
+
 }
 
 span {
     display: contents;
     flex-direction: row;
-    
+
 }
 
 #footerRight {
@@ -285,7 +285,7 @@ span {
     align-items: start;
     align-content: center;
     gap: 15px;
-    
+
 }
 
 p {
@@ -295,7 +295,7 @@ p {
     align-items: anchor-center;
     align-content: space-between;
     flex-wrap: nowrap;
-    
+
 }
 
 
@@ -316,72 +316,73 @@ p {
     
     
     /* ... Tus propiedades existentes ... */
-    
+
     /* ¡Añade o confirma esta línea! */
-    width: 100%; 
-    
+    width: 100%;
+
     /* ... Tus otras propiedades (display: flex, etc.) ... */
     display: flex;
     flex-direction: row;
     height: max-content;
-    
+
     position: relative;
     border-width: 5px;
-    background-color: #bd8c3e; /* El color marrón/dorado */
+    background-color: #bd8c3e;
+    /* El color marrón/dorado */
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
     background-color: #bd8c3e;
     align-content: space-around;
-    
-    
-    
+
+
+
 }
 
-.inputNav{
-
-background-color: #bd8c3e;
-   /* Muestra el enlace como un bloque para poder darle ancho y alto */
+.inputNav {
+    background-color: #bd8c3e;
+    /* Muestra el enlace como un bloque para poder darle ancho y alto */
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     border-radius: 20px;
-    
+
     /* Centra el texto */
     text-align: center;
-    
+
     /* Quita el subrayado típico de los enlaces */
-    text-decoration: none; 
-    
+    text-decoration: none;
+
     /* Color del texto (ajusta según tu diseño) */
-    color: rgb(0, 0, 0); 
-    
+    color: rgb(0, 0, 0);
+
     /* Padding para darle "cuerpo" al botón */
     /*padding: 10px 15px; */
-    
+
     /* El color de fondo normal del botón (ajusta si es diferente al nav) */
-    background-color: transparent; 
-    
+    background-color: transparent;
+
     /* Asegura que el texto esté en mayúsculas como en tu imagen */
     text-transform: uppercase;
-    width: 100%;
-    height: 80%;
+    width: 200px;
+    height: 50px;
 }
 
 .inputNav:hover {
-    background-color: #f0e68c; 
-    color: #333; 
-    cursor: 
+    background-color: #f0e68c;
+    color: #333;
+    cursor:
 }
 
 #superheroes {
     align-content: center;
     width: max-content;
     color-scheme: black;
-    
+
 
 }
+
 @media (max-width: 768px) {
-  body {
-    background-color: lightblue;
-  }
+    body {
+        background-color: lightblue;
+    }
 }
