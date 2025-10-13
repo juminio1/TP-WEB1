@@ -16,39 +16,29 @@
 }
 
 .estiloHeaderppal {
-    /*
-    display: flex;
-    background-color: #020405;
-    flex-direction: row;
-    height: 100%;
-    padding: 5%;
-    align-content: stretch;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    */
 
     display: flex;
     background-color: #020405;
-    flex-direction: row;
     max-height: fit-content;
     flex-wrap: wrap;
     padding: 10px;
-    align-content: center;
     justify-content: space-around;
     align-items: center;
     min-height: fit-content;
-
 }
 
 #logo {
-    width: 10 0%;
+    display: flex;
+    width: 10%;
+    flex-direction: left;
+    height: 100px;
 }
 
 .buscador {
-    display: inline-flex;
-    border: solid;
-    border-radius: 50px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
 }
 
 .iconos {
@@ -82,20 +72,13 @@
 
 }
 
-#logo {
-    display: flex;
-    flex-direction: left;
-    height: 100px;
-
-}
-
-.estiloHeadersecundario {
+/*.estiloHeadersecundario {
     text-align: center;
     background-color: #5394b1;
 }
-
+*/
 #inputNav {
-    background-color: #bd8c3e;
+    background-color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: white;
@@ -131,7 +114,7 @@
 .divNav {
     display: flex;
     width: 110px;
-    background-color: #bd8c3e;
+    background-color: #5394b1;
     padding: 20px;
     border-color: black;
     border-width: 5px;
@@ -144,14 +127,64 @@
 
 }
 
+.nav {
+
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    width: 100%;
+    position: relative;
+    border-width: 5px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: space-around;
+    background-color: #5394b1;
+
+
+
+}
+
+.inputNav {
+
+    background-color: #3002ff;
+    /* Muestra el enlace como un bloque para poder darle ancho y alto */
+    display: block;
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Quita el subrayado típico de los enlaces */
+    text-decoration: none;
+
+    /* Color del texto (ajusta según tu diseño) */
+    color: rgb(0, 0, 0);
+
+    /* Padding para darle "cuerpo" al botón */
+    padding: 10px 15px;
+
+    /* El color de fondo normal del botón (ajusta si es diferente al nav) */
+    background-color: transparent;
+
+    /* Asegura que el texto esté en mayúsculas como en tu imagen */
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.inputNav:hover {
+    background-color: #28be15;
+    color: #333;
+
+}
+
 #seccion-categoria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 🔹 3 columnas */
-    gap: 25px;
-    /* separación entre las tarjetas */
     padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
+
 
 .articulo-categoria {
     background-color: #D9D59A;
@@ -159,22 +192,15 @@
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    height: 100%;
+
 }
 
-
-.divFooter {
-    display: flex;
-    width: 110px;
-    background-color: #625e76;
-    padding: 20px;
-    border-color: black;
-    border-width: 5px;
-    align-content: space-around;
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
-    text-align: center;
+.articulo-categoria img {
+/*    height: 100%; */
+    width: 100%;
 }
+
 
 article {
     justify-content: center;
@@ -193,11 +219,27 @@ article {
 
 }
 
+.divFooter {
+    display: flex;
+    width: 110px;
+    background-color: #625e76;
+    padding: 20px;
+    border-color: black;
+    border-width: 5px;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .item-valor-portada {
     display: flex;
     width: 100%;
     height: 70%;
 }
+
+
 
 .section {
 
@@ -249,22 +291,23 @@ footer {
     font-size: small;
     color: white;
 }
+
 a {
     color: white;
-    
+
 }
 
 #footerCenter {
     display: flex;
     flex-direction: column;
     text-align: justify;
-    
+
 }
 
 span {
     display: contents;
     flex-direction: row;
-    
+
 }
 
 #footerRight {
@@ -275,7 +318,7 @@ span {
     align-items: start;
     align-content: center;
     gap: 15px;
-    
+
 }
 
 p {
@@ -285,91 +328,21 @@ p {
     align-items: anchor-center;
     align-content: space-between;
     flex-wrap: nowrap;
-    
+
 }
 
 
-.nav {
-    /* background-image: url(/assets/img/superheroes_fondo_nav.png);*/
-    /* display: flex;
-    flex-direction: row;
-    height: max-content;
-    width: 100%;
-    position: relative;
-    border-width: 5px;
-    background-color: #bd8c3e;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: stretch;
-    background-color: #bd8c3e;
-    align-content: space-around;
-    
-    
-    /* ... Tus propiedades existentes ... */
-    
-    /* ¡Añade o confirma esta línea! */
-    width: 100%; 
-    
-    /* ... Tus otras propiedades (display: flex, etc.) ... */
-    display: flex;
-    flex-direction: row;
-    height: max-content;
-    
-    position: relative;
-    border-width: 5px;
-    background-color: #bd8c3e; /* El color marrón/dorado */
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    background-color: #bd8c3e;
-    align-content: space-around;
-    
-    
-    
-}
-
-.inputNav{
-
-background-color: #bd8c3e;
-   /* Muestra el enlace como un bloque para poder darle ancho y alto */
-    display: block; 
-    
-    /* Centra el texto */
-    text-align: center;
-    
-    /* Quita el subrayado típico de los enlaces */
-    text-decoration: none; 
-    
-    /* Color del texto (ajusta según tu diseño) */
-    color: rgb(0, 0, 0); 
-    
-    /* Padding para darle "cuerpo" al botón */
-    padding: 10px 15px; 
-    
-    /* El color de fondo normal del botón (ajusta si es diferente al nav) */
-    background-color: transparent; 
-    
-    /* Asegura que el texto esté en mayúsculas como en tu imagen */
-    text-transform: uppercase;
-
-    border: none;
-}
-
-.inputNav:hover {
-    background-color: #f0e68c; 
-    color: #333; 
-    
-}
 
 #superheroes {
     align-content: center;
     width: max-content;
     color-scheme: black;
-    
+
 
 }
+
 @media (max-width: 768px) {
-  body {
-    background-color: lightblue;
-  }
+    body {
+        background-color: lightblue;
+    }
 }
