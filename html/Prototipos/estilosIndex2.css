@@ -144,51 +144,7 @@
 
 }
 
-#seccion-categoria-1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 🔹 3 columnas */
-    gap: 25px;
-    /* separación entre las tarjetas */
-    padding-left: 20%;
-    padding-right: 20%;
-    justify-content: space-evenly;
-}
-
-#seccion-categoria-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 🔹 3 columnas */
-    gap: 25px;
-    /* separación entre las tarjetas */
-    padding-left: 20%;
-    padding-right: 20%;
-    justify-content: space-evenly;
-}
-
-#seccion-categoria-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 🔹 3 columnas */
-    gap: 25px;
-    /* separación entre las tarjetas */
-    padding-left: 20%;
-    padding-right: 20%;
-    justify-content: space-evenly;
-}
-
-#seccion-categoria-4 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 🔹 3 columnas */
-    gap: 25px;
-    /* separación entre las tarjetas */
-    padding-left: 20%;
-    padding-right: 20%;
-    justify-content: space-evenly;
-}
-
-#seccion-categoria-5 {
+#seccion-categoria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* 🔹 3 columnas */
