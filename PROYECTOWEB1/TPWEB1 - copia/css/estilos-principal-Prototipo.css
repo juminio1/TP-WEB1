@@ -26,6 +26,13 @@
     align-items: center;
     min-height: fit-content;
 }
+#q{
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+
+}
 
 #logo {
     display: flex;
@@ -48,6 +55,9 @@
     align-content: stretch;
     align-items: baseline;
     justify-content: flex-end;
+    
+    
+    
 }
 
 .iconosDos {
@@ -68,7 +78,7 @@
 
     display: flex;
     margin-left: 20%;
-    width: 10%;
+    
 
 }
 
