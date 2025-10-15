@@ -148,27 +148,13 @@
 .inputNav {
 
     background-color: #3002ff;
-    /* Muestra el enlace como un bloque para poder darle ancho y alto */
     display: block;
-
-    /* Centra el texto */
     text-align: center;
-
-    /* Quita el subrayado típico de los enlaces */
     text-decoration: none;
-
-    /* Color del texto (ajusta según tu diseño) */
     color: rgb(0, 0, 0);
-
-    /* Padding para darle "cuerpo" al botón */
     padding: 10px 15px;
-
-    /* El color de fondo normal del botón (ajusta si es diferente al nav) */
     background-color: transparent;
-
-    /* Asegura que el texto esté en mayúsculas como en tu imagen */
     text-transform: uppercase;
-
     border: none;
 }
 
@@ -193,6 +179,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     height: 100%;
+    padding-top: 0%;
+   
 
 }
 
