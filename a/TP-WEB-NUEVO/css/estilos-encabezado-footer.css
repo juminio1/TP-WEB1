@@ -1,0 +1,15 @@
+
+.estiloHeaderppal {
+   display: flex;
+   flex-direction: row;
+   background-color: var(--dark-color-fondo);
+   color: white;
+}
+
+
+
+
+.footer {
+   background-color: var(--dark-color-fondo);
+   color: white;
+}
