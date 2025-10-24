@@ -14,6 +14,13 @@
 
 }
 
+.titulo-categoria{
+      font-family: 'Jersey 15';
+      display: flex;
+      flex-direction: row;
+      
+}
+
 #seccion-categoria {
    min-height: 720px;
 }

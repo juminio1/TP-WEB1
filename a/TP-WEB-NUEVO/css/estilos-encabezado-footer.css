@@ -1,12 +1,36 @@
 
+
+
+
+
+
+
 .estiloHeaderppal {
+   
    display: flex;
    flex-direction: row;
+   flex-wrap: nowrap;
    background-color: var(--dark-color-fondo);
    color: white;
+   
 }
 
+.logo img{
 
+    width: 20px;
+
+}
+
+.buscar img{
+
+    width: 20px;
+
+}
+.iconos img{
+
+    width: 20px;
+
+}
 
 
 .footer {
