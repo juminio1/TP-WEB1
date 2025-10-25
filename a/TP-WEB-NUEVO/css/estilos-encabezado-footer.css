@@ -57,10 +57,13 @@
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
+    padding: 5px;
 }
 
 
-
+.iconos img{
+    width: 2em;
+}
 
 .footer {
     background-color: var(--dark-color-fondo);
