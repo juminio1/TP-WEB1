@@ -47,9 +47,19 @@ body {
 }
 
 .articulo-categoria {
-   border: solid 3px gray;
-   background-color: #b67d6b;
+   border: solid 1px black;
+   background-color: #333333;
+   /*background-color: #b67d6b;*/
 }
+
+
+.articulo-categoria{
+
+   text-align: justify;
+   padding: 20px;
+   
+}
+
 
 
 #qr-code {
