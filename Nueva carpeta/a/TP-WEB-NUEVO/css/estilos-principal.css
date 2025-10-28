@@ -12,7 +12,8 @@ body {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   background-attachment: fixed; /* fija la imagen mientras el contenido se desplaza*/
+   background-attachment: fixed;
+   /* fija la imagen mientras el contenido se desplaza*/
 }
 
 /*#navegacion-categoria {
@@ -53,11 +54,11 @@ body {
 }
 
 
-.articulo-categoria{
+.articulo-categoria {
 
    text-align: justify;
    padding: 20px;
-   
+
 }
 
 
@@ -75,9 +76,9 @@ body {
 }
 
 .item-valor-portada {
-
    width: 100%;
-   height: auto;
+   height: 500px;
+   object-fit: fill;
 
 }
 
