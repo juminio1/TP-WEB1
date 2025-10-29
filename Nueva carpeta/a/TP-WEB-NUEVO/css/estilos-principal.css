@@ -8,7 +8,7 @@
 
 
 body {
-   background-image: url(/assets/img/FondoFinal.jpg);
+   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -22,9 +22,12 @@ body {
    /*font-weight: bold; /* Fuente en negrita o bold */
    /*color: #ffffff; /* Color del texto */
    /*letter-spacing: 2px; /* Espacio entre letras */
-   border-radius: 5px; /* Borde del boton */
-   background-color: #1c1e2f; /* Color de fondo */
-   padding: 18px 30px; /* Relleno del boton */
+   border-radius: 5px;
+   /* Borde del boton */
+   background-color: #1c1e2f;
+   /* Color de fondo */
+   padding: 18px 30px;
+   /* Relleno del boton */
    position: fixed;
    bottom: 40px;
    right: 40px;
@@ -34,7 +37,8 @@ body {
 }
 
 .btn-flotante:hover {
-   background-color: #625e76; /* Color de fondo al pasar el cursor */
+   background-color: #625e76;
+   /* Color de fondo al pasar el cursor */
    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
    transform: translateY(-7px);
 }
@@ -87,10 +91,8 @@ body {
 
 
 .articulo-categoria {
-
    text-align: justify;
    padding: 20px;
-
 }
 
 
@@ -111,59 +113,42 @@ body {
    width: 100%;
    height: 500px;
    object-fit: fill;
-
 }
 
 @media screen and (max-width: 48rem) {
-
    * {
       margin: 0%;
       padding: 0%;
    }
 
    #seccion-categoria {
-
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-
-
    }
-
 }
 
 @media screen and (min-width: 48rem) and (max-width: 64rem) {
-
    * {
       margin: 0%;
       padding: 0%;
    }
 
    #seccion-categoria {
-
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
-
    }
 
 
 }
 
 @media screen and (min-width: 64rem) {
-
    * {
       margin: 0%;
       padding: 0%;
    }
 
    #seccion-categoria {
-
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-
-
    }
-
-
-
 }
