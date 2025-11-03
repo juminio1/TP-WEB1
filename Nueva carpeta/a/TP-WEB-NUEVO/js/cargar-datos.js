@@ -5,6 +5,8 @@ const tabCategoria1 = document.getElementById("tab-categoria-1");
 
 let linksCategorias = document.querySelectorAll("a.tab-categoria");
 
+
+
 linksCategorias.forEach((linkCategoria) => {
    linkCategoria.addEventListener("click", () => {
       items.forEach((item) => {
@@ -35,3 +37,4 @@ linksCategorias.forEach((linkCategoria) => {
 if (configuracion["modo-test-prod"] === "prod") {
    tabCategoria1.click();
 };
+

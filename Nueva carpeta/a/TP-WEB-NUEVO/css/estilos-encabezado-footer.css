@@ -65,7 +65,17 @@
     width: 2em;
 }
 
-.footer {
+footer {
     background-color: var(--dark-color-fondo);
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footerCenter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
