@@ -80,3 +80,9 @@ footer {
     flex-direction: column;
     text-align: left;
 }
+
+#footerRight {
+width: 100px
+align-content: center;
+display: flex;
+}
