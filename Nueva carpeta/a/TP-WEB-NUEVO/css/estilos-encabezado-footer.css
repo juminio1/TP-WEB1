@@ -6,7 +6,6 @@
     padding: 10px 30px;
 }
 
-
 .logo-categoria {
     display: flex;
     align-items: center;
@@ -17,13 +16,11 @@
     max-height: 80px;
 }
 
-
 #navegacion-categoria {
 
     display: flex;
     gap: 20px;
 }
-
 
 .tab-categoria {
     color: white;
@@ -34,12 +31,9 @@
     transition: border-bottom 0.3s;
 }
 
-
  .tab-categoria:hover {
-    border-bottom: 2px solid red;
-
+    border-bottom: 2px solid #5394b1;
 }
-
 
 #q {
     display: flex;
@@ -51,7 +45,6 @@
     justify-content: center;
 }
 
-
 .buscador-iconos {
     display: flex;
     align-items: center;
@@ -60,9 +53,17 @@
     padding: 5px;
 }
 
+.iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
 
 .iconos img{
-    width: 2em;
+    width: 25px;
+    height: auto;
 }
 
 footer {
