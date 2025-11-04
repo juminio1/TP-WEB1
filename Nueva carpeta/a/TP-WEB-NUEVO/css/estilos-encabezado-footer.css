@@ -1,0 +1,88 @@
+.estiloHeaderppal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+}
+
+
+.logo-categoria {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo img {
+    max-height: 80px;
+}
+
+
+#navegacion-categoria {
+
+    display: flex;
+    gap: 20px;
+}
+
+
+.tab-categoria {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+
+ .tab-categoria:hover {
+    border-bottom: 2px solid red;
+
+}
+
+
+#q {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+
+.buscador-iconos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 5px;
+}
+
+
+.iconos img{
+    width: 2em;
+}
+
+footer {
+    background-color: var(--dark-color-fondo);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px ;
+}
+
+#footerCenter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#footerRight {
+width: 100px
+align-content: center;
+display: flex;
+}
