@@ -82,7 +82,7 @@ footer {
 }
 
 #footerRight {
-width: 100px
+width: 100px;
 align-content: center;
 display: flex;
 }
