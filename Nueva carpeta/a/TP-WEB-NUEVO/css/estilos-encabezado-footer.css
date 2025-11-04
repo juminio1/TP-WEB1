@@ -62,7 +62,7 @@
 }
 
 .iconos img{
-    width: 25px;
+    width: 30px;
     height: auto;
 }
 
@@ -83,7 +83,9 @@ footer {
 }
 
 #footerRight {
+display: flex;
+flex-direction: row;
 width: 100px;
 align-content: center;
-display: flex;
+padding-right: 50;
 }
