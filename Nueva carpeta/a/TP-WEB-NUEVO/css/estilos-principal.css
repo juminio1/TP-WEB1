@@ -7,7 +7,7 @@
 
 
 body {
-   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-image: url(/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -97,21 +97,29 @@ body {
       align-items: center;
       flex-direction: row;
       padding: 5%;
-      
+
    }
 
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      align-items: center;
+      /*align-items: center;*/
    }
 
-    footer {
-        flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
-        align-items: center;    /* Centra los elementos apilados */
-        text-align: center;
-        padding: 20px 0;
-    }
+   footer {
+      flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
+      align-items: center; /* Centra los elementos apilados */
+      text-align: center;
+      padding: 20px 0;
+   }
+
+   .divFooter {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+
+   }
 }
 
 @media screen and (min-width: 48rem) and (max-width: 64rem) {
@@ -120,23 +128,30 @@ body {
       padding: 0%;
    }
 
-   #header{
+   /*#header {
       display: flex;
-      align-items: center;  
-   }
+      align-items: center;
+   }*/
 
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center;
+      /*align-items: center;*/
    }
 
    footer {
-        flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
-        align-items: center;    /* Centra los elementos apilados */
-        text-align: center;
-        padding: 20px 0;
-    }
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+
+   }
+   .divFooter {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+   }
 }
 
 @media screen and (min-width: 64rem) {
@@ -148,8 +163,8 @@ body {
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      align-items: center;
+      /*align-items: center;*/
    }
-   
-   
+
+
 }
