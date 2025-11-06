@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/css/styles.css">
+</head>
+
+<body>
+
+    <div class="formulario" id="login">
+        <h2>Iniciar sesión</h2>
+
+        <form action="">
+
+            <div class="form-email">
+                <input type="email" id="email" name="email" placeholder="Email*">
+            </div>
+            <br>
+
+            <div class="form-contraseña">
+                <input type="password" id="password" name="password" placeholder="Contraseña*">
+                <button type="button" id="mostrar" class="ojo-mostrar">👁</button>
+            </div>
+
+            <div>
+                <a href="recuperar contraseña" class="recuperar-contraseña">¿Olvidaste tu contraseña?</a>
+            </div>
+            
+
+            <div>
+                <button type="submit" class="boton-azul">INICIAR SESIÓN</button>
+            </div>
+
+            <p class="registrarse">¿No tenes cuenta? <a href="registrate">Registrate</a></p>
+            <p class="terminos-condiciones">
+                Al continuar, confirmo que he leído los
+                <a href="terminosYcondiciones">Terminos y Condiciones</a> y las
+                <a href="politicas">Políticas de Privacidad</a>
+            </p>
+
+        </form>
+    </div>
+
+
+    <script>
+        // Capturo elementos
+        const passwordInput = document.getElementById('password');
+        const mostrar = document.getElementById('mostrar');
+
+        // Agrego evento click al ojito
+        mostrar.addEventListener('click', function () {
+            // Si está oculto (type=password), lo muestro
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

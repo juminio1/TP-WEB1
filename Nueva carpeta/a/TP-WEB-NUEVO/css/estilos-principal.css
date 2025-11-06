@@ -1,0 +1,155 @@
+﻿/* @import url("temas-colores-fuentes.css"); */
+
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+
+body {
+   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   /* fija la imagen mientras el contenido se desplaza*/
+}
+
+.btn-flotante {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   border-radius: 5px;
+   /* Color de fondo */
+   /*padding: 18px 30px;*/
+   /* Relleno del boton */
+   position: fixed;
+   bottom: 80px;
+   right: 40px;
+   /* transition: all 300ms ease 0ms;*/
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+   /*z-index: 99;*/
+}
+
+.btn-flotante img {
+   width: 75%;
+   height: auto;
+}
+
+.btn-flotante:hover {
+   background-color: #625e76;
+   /* Color de fondo al pasar el cursor */
+   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+   transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+   .btn-flotante {
+      font-size: 14px;
+      padding: 12px 20px;
+      bottom: 50px;
+      right: 20px;
+   }
+}
+
+#seccion-categoria {
+   min-height: 720px;
+}
+
+.articulo-categoria {
+   border: solid 1px black;
+   background-color: #333333;
+   /*background-color: #b67d6b;*/
+}
+
+.articulo-categoria {
+   text-align: justify;
+   padding: 20px;
+}
+
+#qr-code {
+   width: 100px;
+   height: 100px;
+}
+
+#seccion-categoria {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2em;
+   padding: 20px;
+}
+
+.item-valor-portada {
+   width: 100%;
+   height: 500px;
+   object-fit: fill;
+}
+
+@media screen and (max-width: 48rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   #header {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding: 5%;
+      
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+   }
+
+    footer {
+        flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
+        align-items: center;    /* Centra los elementos apilados */
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   #header{
+      display: flex;
+      align-items: center;  
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+   }
+
+   footer {
+        flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
+        align-items: center;    /* Centra los elementos apilados */
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+   }
+   
+   
+}

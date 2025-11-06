@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi cuenta</title>
+  <link rel="stylesheet" href="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos_datosPersonales.css">
+</head>
+<body>
+
+  <div class="box">
+    <p class="ruta">Mi cuenta > Mi usuario</p>
+    <h2 class="titulo">Mi usuario</h2>
+    <hr>
+
+    <form class="form">
+
+      <!-- Email principal -->
+      <div class="fila">
+        <label for="email" class="label">Email principal</label>
+        <input type="email" id="email" class="input" placeholder="@gmail.com">
+      </div>
+
+      <div class="fila">
+        <button type="submit" class="btn">GUARDAR CAMBIOS</button>
+      </div>
+
+      <!-- Contraseña -->
+      <div class="fila">
+        <label for="password" class="label">Contraseña</label>
+        <div class="fila-inline">
+          <input type="password" id="password" class="input" placeholder="********" disabled>
+          <button type="button" class="btn-sec">CAMBIAR</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="box">
+    <p class="ruta">Mi cuenta > Datos personales</p>
+    <h2 class="titulo">Datos personales</h2>
+    <hr>
+
+    <form class="form">
+
+      <div class="fila-inline">
+        <input type="text" class="input" placeholder="Nombre">
+        <input type="text" class="input" placeholder="Apellido">
+      </div>
+
+      <div class="fila-inline">
+        <input type="text" class="input" placeholder="Tipo">
+        <input type="text" class="input" placeholder="Número de documento">
+        <input type="date" class="input">
+      </div>
+
+      <div class="fila-inline">
+        <input type="text" class="input" placeholder="Teléfono celular">
+        <input type="email" class="input" placeholder="Email secundario">
+      </div>
+
+      <div class="fila">
+        <button type="submit" class="btn">GUARDAR CAMBIOS</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
+
