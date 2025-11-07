@@ -7,7 +7,7 @@
 
 
 body {
-   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-image: url(/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -103,7 +103,6 @@ body {
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      align-items: center;
    }
 
     footer {
@@ -128,7 +127,6 @@ body {
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center;
    }
 
    footer {
