@@ -53,9 +53,9 @@ body {
    }
 }
 
-#seccion-categoria {
+/*#seccion-categoria {
    min-height: 720px;
-}
+}*/
 
 .articulo-categoria {
    border: solid 1px black;
@@ -78,7 +78,8 @@ body {
    grid-template-columns: repeat(3, 1fr);
    gap: 2em;
    padding: 20px;
-}
+   align-items: stretch;
+   }
 
 .item-valor-portada {
    width: 100%;
@@ -128,7 +129,7 @@ body {
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center;
+      align-items: stretch;
    }
 
    footer {
@@ -140,16 +141,9 @@ body {
 }
 
 @media screen and (min-width: 64rem) {
-   * {
-      margin: 0%;
-      padding: 0%;
-   }
-
-   #seccion-categoria {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      align-items: center;
-   }
-   
-   
+    #seccion-categoria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: stretch;
+    }
 }
