@@ -97,7 +97,6 @@ body {
       align-items: center;
       flex-direction: row;
       padding: 5%;
-
    }
 
    #seccion-categoria {
@@ -106,20 +105,36 @@ body {
       /*align-items: center;*/
    }
 
-   footer {
-      flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
-      align-items: center; /* Centra los elementos apilados */
-      text-align: center;
-      padding: 20px 0;
-   }
+  footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
 
-   .divFooter {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
+    #footerCenter {
+        text-align: center;
+        margin-top: 20px; 
+    }
 
-   }
+    #footerRight {
+        width: auto; 
+        justify-content: center; 
+        margin-top: 30px;
+    }
+
+    #footerRight div {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    footer p em {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (min-width: 48rem) and (max-width: 64rem) {
@@ -139,19 +154,42 @@ body {
       /*align-items: center;*/
    }
 
-   footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      
+  /* El footer principal ya está bien: apilado y centrado */
+    footer {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        padding: 30px 0; /* Agregamos un poco más de padding vertical para tabletas */
+    }
 
-   }
-   .divFooter {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-   }
+    /* Aseguramos que los contenedores hijos también centren su contenido y ocupen todo el ancho */
+    #logoFooterLeft,
+    #footerCenter,
+    #footerRight {
+        width: 100%; /* Ocupa todo el ancho disponible para centrar mejor */
+        margin-bottom: 25px; /* Separación visual entre las secciones */
+        text-align: center;
+    }
+
+    /* El menú central (que está en columna) */
+    #footerCenter {
+        /* Para evitar que los enlaces se alineen a la izquierda del contenedor */
+        align-items: center; 
+    }
+
+    /* Los íconos sociales dentro de #footerRight */
+    #footerRight {
+        /* Usamos flexbox para centrar la fila de íconos sociales */
+        display: flex;
+        flex-direction: column; /* Apila los íconos con el texto de copyright */
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* El texto de copyright */
+    footer p em {
+        margin-top: 15px; /* Espacio entre los íconos y el copyright */
+    }
 }
 
 @media screen and (min-width: 64rem) {
