@@ -1,7 +1,11 @@
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
+  background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   color: #222;
@@ -39,7 +43,9 @@ hr {
 }
 
 /* formularios */
-.form { width: 100%; }
+.form {
+  width: 100%;
+}
 
 
 .fila {
@@ -72,7 +78,7 @@ hr {
 
 /* botones */
 .btn {
- background-color: #007b;
+  background-color: #007b;
   color: #fff;
   border: none;
   padding: 10px 16px;
