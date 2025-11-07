@@ -143,10 +143,6 @@ body {
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-<<<<<<< HEAD
-=======
-      align-items: stretch;
->>>>>>> b4b2e76d7a46f50ff2d2571c581d37bb2d7441f2
    }
 
    footer {
