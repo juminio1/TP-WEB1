@@ -53,10 +53,6 @@ body {
    }
 }
 
-/*#seccion-categoria {
-   min-height: 720px;
-}*/
-
 .articulo-categoria {
    border: solid 1px black;
    background-color: #333333;
@@ -94,7 +90,6 @@ body {
    color: #020405;
    text-align: left;
 }
-
 
 .item-valor-autor {
    font-size: 16px;
