@@ -112,21 +112,13 @@ body {
       display: flex;
       align-items: stretch;
       flex-direction: row;
-<<<<<<< HEAD
       padding: 5%;
-=======
-      /* padding: 5%; */
-      
->>>>>>> ca544792e97d58bf3610923de6433f57380b0a62
    }
 
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-<<<<<<< HEAD
       /*align-items: center;*/
-=======
->>>>>>> ca544792e97d58bf3610923de6433f57380b0a62
    }
 
   footer {
@@ -175,10 +167,7 @@ body {
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-<<<<<<< HEAD
       /*align-items: center;*/
-=======
->>>>>>> ca544792e97d58bf3610923de6433f57380b0a62
    }
 
   /* El footer principal ya está bien: apilado y centrado */
@@ -220,7 +209,6 @@ body {
 }
 
 @media screen and (min-width: 64rem) {
-<<<<<<< HEAD
    * {
       margin: 0%;
       padding: 0%;
@@ -233,11 +221,4 @@ body {
    }
 
 
-=======
-    #seccion-categoria {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: stretch;
-    }
->>>>>>> ca544792e97d58bf3610923de6433f57380b0a62
 }
