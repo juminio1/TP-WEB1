@@ -97,15 +97,15 @@ body {
 
 /* AUTORES */
 .item-valor-autor{
-   color: rgb(190, 173, 173);
+   color: rgb(214, 206, 206);
    text-align: center;
    font-size: 1.02rem;
    padding-bottom: 8px;
 }
 
-/* DESCRIPCION */
 .item-valor-descripcion{
-   padding: 8px;
+   color: rgb(214, 206, 206);
+   padding-bottom: 8px;
 }
 
 /* RATING */
