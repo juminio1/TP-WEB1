@@ -18,4 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
             resultado.className = 'invalid';
         }
     });
+
+
+    const passwordInput = document.getElementById('password');
+    const cambiarBtn = document.querySelector('.btn-sec'); // Botón "CAMBIAR"
+
+    // Creamos un elemento para mostrar el resultado
+    const resultadoPass = document.createElement('p');
+    resultadoPass.id = 'resultado-pass';
+    passwordInput.parentNode.appendChild(resultadoPass);
+
+    cambiarBtn.addEventListener('click', () => {
+        const password = passwordInput.value.trim();
+
+        // Regex para validar contraseña segura
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+
+        if (passwordRegex.test(password)) {
+            resultadoPass.textContent = 'Contraseña válida!';
+            resultadoPass.className = 'valid';
+        } else {
+            resultadoPass.textContent = 'Debe tener mínimo 8 caracteres, una mayúscula, una minúscula, un número y un símbolo.';
+            resultadoPass.className = 'invalid';
+        }
+    });
+
 });
+
