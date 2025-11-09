@@ -9,6 +9,9 @@
    <link rel="stylesheet" href="/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-encabezado-footer.css">
    <link rel="stylesheet" href="/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-principal.css">
    <link rel="stylesheet" href="/Nueva carpeta/a/TP-WEB-NUEVO/css/temas-colores-fuentes.css">
+
+   <!-- Utilizamos solo para los iconos -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -24,13 +27,27 @@
       <div class="logo-categoria">
          <div id="logo"><img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/mascaraSinFondoBlanco.png" alt="logo"
                height="100px"></div>
-         <nav id="navegacion-categoria">
+
+         <!-- boton abrir menu -->
+         <!-- <button id="abrir" class="abrir-menu "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+               fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+               <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg></button> -->
+
+         <nav id="navegacion-categoria" class="nav-categoria ">
+            <!-- boton cerrar menu -->
+
+            <button class="cerrar-menu" id="cerrar"> Cerrar </button>
+            <!-- <i class="bi bi-x"></i> -->
+
             <a href="#" id="tab-categoria-1" class="tab-categoria">Súper Héroes</a>
             <a href="#" id="tab-categoria-2" class="tab-categoria">Villanos</a>
             <a href="#" id="tab-categoria-3" class="tab-categoria">Anti Héroes</a>
             <a href="#" id="tab-categoria-4" class="tab-categoria">Dioses</a>
             <a href="#" id="tab-categoria-5" class="tab-categoria">Animal</a>
-         </nav>
+         </nav> -
+
       </div>
       <!--Segunda columna-->
       <div class="buscador-iconos">
@@ -41,18 +58,23 @@
          </form>
          </form>
          <div class="iconos">
-
             <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/account.png" alt="accounts">
             <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/contrast.png" alt="contraste">
-            <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/notification.png" alt="notificaciones">
+            <!-- <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/notification.png" alt="notificaciones"> -->
+
+            <button id="abrir" class="abrir-menu "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+           </svg></button>
 
          </div>
       </div>
    </header>
 
-       <a class="btn-flotante" id="logo" href="#inicio"><img
-         src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/up-arrow.png" alt=""></a>
-  
+   <a class="btn-flotante" id="logo" href="#inicio"><img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/up-arrow.png"
+         alt=""></a>
+
    <main>
       <section id="seccion-filtros">
       </section>
@@ -68,7 +90,7 @@
                   1</p>
                <p class="item-valor-autor"><span style="font-weight:bold;text-transform:uppercase;">Autor</span> ITEM 1
                </p>
-               
+
                <img class="item-valor-portada"
                   src='/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/categoria00-item01.png' alt='Imagen de Portada'>
                <p class="item-valor-descripcion"><span
@@ -391,8 +413,7 @@
 
    <footer>
       <div id="logoFooterLeft">
-         <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/mascaraSinFondoBlanco.png" alt=" logo"
-            height="100px">
+         <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/mascaraSinFondoBlanco.png" alt=" logo" height="100px">
       </div>
       <div class="divFooter" id="footerCenter">
          <a href="#" id="tab-categoria-1" class="tab-categoria">Súper Héroes</a>
@@ -415,6 +436,8 @@
       </div>
    </footer>
 
+   <!-- script del menuDesplegable -->
+   <script src="menuDesplegable.js"></script>
    <!-- INICIO | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
    <script type="module" src="/Nueva carpeta/a/TP-WEB-NUEVO/js/cargar-datos.js"></script>
    <!-- FIN | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
