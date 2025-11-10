@@ -118,7 +118,9 @@ body {
    padding: 5px;
 }
 
-
+section #categoria01-item01:hover{
+   background-color: green;
+}
 
 @media screen and (max-width: 48rem) {
    * {
