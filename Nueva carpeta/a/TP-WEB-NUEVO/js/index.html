@@ -6,9 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Grupo 16 | Personajes</title>
 
-   <link rel="stylesheet" href="/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-encabezado-footer.css">
-   <link rel="stylesheet" href="/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-principal.css">
-   <link rel="stylesheet" href="/Nueva carpeta/a/TP-WEB-NUEVO/css/temas-colores-fuentes.css">
+   <link rel="stylesheet" href="/css/estilos-encabezado-footer.css">
+   <link rel="stylesheet" href="/css/estilos-principal.css">
+   <link rel="stylesheet" href="/css/temas-colores-fuentes.css">
 
    <!-- Utilizamos librerias solo para los iconos -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -25,7 +25,7 @@
       </a>*/-->
       <!--Primera columna-->
       <div class="logo-categoria">
-         <div id="logo"><img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/mascaraSinFondoBlanco.png" alt="logo"
+         <div id="logo"><img src="/assets/img/mascaraSinFondoBlanco.png" alt="logo"
                height="100px"></div>
 
          <!-- boton abrir menu -->
@@ -52,12 +52,13 @@
          <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
             <label for="q"></label>
             <input id="q" name="q" type="search" placeholder="Buscar..." required>
-            <input type="hidden" name="as_sitesearch" value="tusitio.com">
+            <p id="noResultados" class="no-resultados"> No se han encontrado resultados</p>
+            <!-- <input type="hidden" name="as_sitesearch" value="tusitio.com"> -->
          </form>
          </form>
          <div class="iconos">
-            <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/account.png" alt="accounts">
-            <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/contrast.png" alt="contraste">
+            <img src="/assets/img/account.png" alt="accounts">
+            <img src="/assets/img/contrast.png" alt="contraste">
             <!-- <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/notification.png" alt="notificaciones"> -->
 
             <button id="abrir" class="abrir-menu "> <i class="bi bi-list"></i> </button>
@@ -66,7 +67,7 @@
       </div>
    </header>
 
-   <a class="btn-flotante" id="logo" href="#inicio"><img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/up-arrow.png"
+   <a class="btn-flotante" id="logo" href="#inicio"><img src="/assets/img/up-arrow.png"
          alt=""></a>
 
    <main>
@@ -407,7 +408,7 @@
 
    <footer>
       <div id="logoFooterLeft">
-         <img src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/mascaraSinFondoBlanco.png" alt=" logo" height="100px">
+         <img src="/assets/img/mascaraSinFondoBlanco.png" alt=" logo" height="100px">
       </div>
       <div class="divFooter" id="footerCenter">
          <a href="#" id="tab-categoria-1" class="tab-categoria">Súper Héroes</a>
@@ -419,11 +420,11 @@
       <div class="divFooter">
          <div class="divFooter" id="footerRight">
             <a href="https://www.instagram.com/personajesdepeliculas/" target="_blank"><img
-                  src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/instagram.png" alt="inlink" height="40px"></a>
+                  src="/assets/img/instagram.png" alt="inlink" height="40px"></a>
             <a href="https://x.com/webPersonajes" target="_blank"> <img
-                  src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/logo_X.png" alt="" height="40px"></a>
+                  src="/assets/img/logo_X.png" alt="" height="40px"></a>
             <a href="https://www.youtube.com/" target="_blank"> <img
-                  src="/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/youtube.png" alt="" height="40px"></a>
+                  src="/assets/img/youtube.png" alt="" height="40px"></a>
          </div>
          <p> <em>Todos los derechos reservados©2025</em>
          </p>
@@ -431,9 +432,9 @@
    </footer>
 
    <!-- script del menuDesplegable -->
-   <script src="menuDesplegable.js"></script>
+   <script src="/js/menuDesplegable.js"></script>
    <!-- INICIO | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
-   <script type="module" src="/Nueva carpeta/a/TP-WEB-NUEVO/js/cargar-datos.js"></script>
+   <script type="module" src="/js/cargar-datos.js"></script>
    <!-- FIN | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
 </body>
 

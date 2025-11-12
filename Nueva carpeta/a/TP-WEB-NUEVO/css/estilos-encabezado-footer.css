@@ -46,6 +46,11 @@
     justify-content: center;
 }
 
+.no-resultados{
+    color: red;
+    display: none;
+}
+
 .buscador-iconos {
     display: flex;
     align-items: center;
