@@ -45,12 +45,13 @@ body {
 }
 
 /* @media only screen and (max-width: 600px) { */
-   .btn-flotante {
-      font-size: 14px;
-      padding: 12px 20px;
-      bottom: 50px;
-      right: 20px;
-   }
+.btn-flotante {
+   font-size: 14px;
+   padding: 12px 20px;
+   bottom: 50px;
+   right: 20px;
+}
+
 /* } */
 
 .articulo-categoria {
@@ -93,4 +94,13 @@ body {
    text-align: left;
 }
 
-
+.fullscreen {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   z-index: 9999;
+   overflow: auto;
+}
