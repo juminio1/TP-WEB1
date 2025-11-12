@@ -78,7 +78,6 @@ body {
    text-align: left;
 }
 
-
 .item-valor-autor {
    font-size: 16px;
    color: #839b16;
@@ -328,3 +327,20 @@ body {
 #seccion-categoria{
    min-height: 100%;
 }  
+.fullscreen {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   z-index: 9999;
+   overflow: auto;
+}
+
+.item-valor-portada-fullscreen {
+   width: 50%;
+   height: 700px;
+   object-fit: fill;
+   padding-top: 5%;
+}

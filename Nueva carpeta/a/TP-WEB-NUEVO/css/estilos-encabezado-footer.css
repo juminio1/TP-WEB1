@@ -95,9 +95,10 @@ footer {
 }
 
 #footerRight {
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    align-content: center;
-    padding-right: 50;
+display: flex;
+flex-direction: row;
+width: 100px;
+align-content: center;
+padding-right: 50;
 }
+
