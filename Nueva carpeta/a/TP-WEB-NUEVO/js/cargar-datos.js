@@ -3,9 +3,8 @@ import configuracion from "../config/configuracion.json" with { type: 'json' };
 
 const tabCategoria1 = document.getElementById("tab-categoria-1");
 
+
 let linksCategorias = document.querySelectorAll("a.tab-categoria");
-
-
 
 linksCategorias.forEach((linkCategoria) => {
    linkCategoria.addEventListener("click", () => {
@@ -23,7 +22,7 @@ linksCategorias.forEach((linkCategoria) => {
          articuloContenedor.getElementsByClassName("item-valor-rating")[0].innerText = Rating;
 
          const personalizados = Object.keys(item).filter(key => key.startsWith("personalizado_"));
-         
+
          personalizados.forEach((personalizado, index) => {
             articuloContenedor.getElementsByClassName(`item-campo-personalizado_${index + 1}`)[0].innerText = personalizado.split(".")[1];
             articuloContenedor.getElementsByClassName(`item-valor-personalizado_${index + 1}`)[0].innerText = item[personalizado];
@@ -39,3 +38,19 @@ if (configuracion["modo-test-prod"] === "prod") {
    tabCategoria1.click();
 };
 
+
+const articulos = document.querySelectorAll("article");
+const imagenes = document.querySelectorAll(".item-valor-portada")
+
+articulos.forEach((articulo) => {
+   articulo.addEventListener("click", () => {
+      articulo.classList.toggle("fullscreen");
+   });
+});
+
+imagenes.forEach((imagen) => {
+   imagen.addEventListener("click", () => {
+      imagen.classList.toggle("item-valor-portada-fullscreen");
+   });
+
+});
