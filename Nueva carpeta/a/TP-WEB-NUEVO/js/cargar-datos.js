@@ -31,6 +31,7 @@ linksCategorias.forEach((linkCategoria) => {
          articuloContenedor.id = Id;
       });
    });
+  
 });
 
 if (configuracion["modo-test-prod"] === "prod") {
