@@ -39,21 +39,17 @@ if (configuracion["modo-test-prod"] === "prod") {
 
 
 const articulos = document.querySelectorAll("article");
+const imagenes = document.querySelectorAll(".item-valor-portada")
 
 articulos.forEach((articulo) => {
    articulo.addEventListener("click", () => {
-
       articulo.classList.toggle("fullscreen");
-      // Si ya está en fullscreen, lo quita
-      // if (articulo.classList.contains("fullscreen")) {
-      //    articulo.classList.remove("fullscreen");
-      // } else {
-      //    // Primero quita fullscreen de otros artículos
-      //    articulos.forEach(a => a.classList.remove("fullscreen"));
-      //    // Luego agrega fullscreen al que se clickeó
-      //    articulo.classList.add("fullscreen");
-      // }
    });
 });
 
+imagenes.forEach((imagen) => {
+   imagen.addEventListener("click", () => {
+      imagen.classList.toggle("item-valor-portada-fullscreen");
+   });
 
+});

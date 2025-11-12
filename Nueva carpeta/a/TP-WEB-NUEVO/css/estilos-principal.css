@@ -104,3 +104,10 @@ body {
    z-index: 9999;
    overflow: auto;
 }
+
+.item-valor-portada-fullscreen {
+   width: 50%;
+   height: 700px;
+   object-fit: fill;
+   padding-top: 5%;
+}
