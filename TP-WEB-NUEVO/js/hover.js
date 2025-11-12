@@ -22,7 +22,7 @@ seccionCategoria.addEventListener("mouseout", (e) => {
 const efectosCategorias = {
   "categoria01": (articulo) => {
     // Súper Héroes: fondo verde
-    articulo.style.backgroundColor = "green";
+    articulo.style.backgroundColor = "blue";
   },
   "categoria02": (articulo) => {
     // Villanos: se agranda un poquito
@@ -83,6 +83,51 @@ seccionCategoria.addEventListener("mouseout", (e) => {
       break;
   }
 });
+
+
+
+/* ----------- RATING -------------*/ 
+
+function actualizarRatings() {
+  const ratings = document.querySelectorAll(".item-valor-rating");
+
+  ratings.forEach(ratingElement => {
+    const texto = ratingElement.textContent.trim();
+    const numero = parseInt(texto.match(/\d+/));
+    if (isNaN(numero)) return;
+
+    // Limpiar el contenido y agregar texto base
+    ratingElement.innerHTML = "";
+
+    // Crear 5 estrellas
+    for (let i = 1; i <= 5; i++) {
+      const estrella = document.createElement("span");
+      estrella.textContent = "★";
+      estrella.style.color = i <= numero ? "gold" : "lightgray";
+      estrella.style.fontSize = "16px";
+      estrella.style.marginRight = "2px";
+      ratingElement.appendChild(estrella);
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Genera las estrellas al cargar la página
+  actualizarRatings();
+
+  // Detecta cambios en el contenedor de artículos
+  const seccionCategoria = document.getElementById("seccion-categoria");
+
+  const observer = new MutationObserver(() => {
+    actualizarRatings(); // Vuelve a generar las estrellas automáticamente
+  });
+
+  observer.observe(seccionCategoria, { childList: true, subtree: true });
+}); 
+
+
+
+
 
 
 

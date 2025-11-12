@@ -90,8 +90,9 @@ body {
 .item-valor-nombre{
    color: white ;
    text-align: center;
-   font-size: 1.4rem;
+   font-size: 1.3rem;
    padding-bottom: 8px;
+   font-family: "Roboto Mono";
 
 }
 
@@ -106,6 +107,7 @@ body {
 .item-valor-descripcion{
    color: rgb(214, 206, 206);
    padding-bottom: 8px;
+   font-size: 1.1rem;
 }
 
 /* RATING */
@@ -116,11 +118,9 @@ body {
 /* HABILIDAD , CARACTER , ORIGEN , ROPA , RAZA */
 .detalle-articulo h4{
    padding: 5px;
+   font-size: 1.2rem;
 }
 
-section #categoria01-item01:hover{
-   background-color: green;
-}
 
 @media screen and (max-width: 48rem) {
    * {
