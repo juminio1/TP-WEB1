@@ -324,3 +324,7 @@ body {
    }
 
 }
+
+#seccion-categoria{
+   min-height: 100%;
+}  

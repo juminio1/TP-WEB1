@@ -39,31 +39,29 @@
       </div>
       <!--Segunda columna-->
       <div class="buscador-iconos">
-         <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
-            <label for="q"></label>
             <input id="q" name="q" type="search" placeholder="Buscar..." required>
-            <p id="noResultados" class="no-resultados"> No se han encontrado resultados</p>
-           
+            
          </form>
       </form>
-         <div class="iconos">
-            <img src="/assets/img/account.png" alt="accounts">
-            <img src="/assets/img/contrast.png" alt="contraste">
+      <div class="iconos">
+         <img src="/assets/img/account.png" alt="accounts">
+         <img src="/assets/img/contrast.png" alt="contraste">
 
-            <!-- boton abrir menu -->
+         <!-- boton abrir menu -->
             <button id="abrir" class="abrir-menu "> <i class="bi bi-list"></i> </button>
 
          </div>
       </div>
    </header>
-
+   
    <a class="btn-flotante" id="logo" href="#inicio"><img src="/assets/img/up-arrow.png"
          alt=""></a>
-
+         
    <main>
       <section id="seccion-filtros">
       </section>
-
+      
+      <p id="noResultados" class="no-resultados"> No se han encontrado resultados</p>
       <section id="seccion-categoria">
          <article id="categoria00-item01" class="articulo-categoria item01">
             <header class="header-articulo">
@@ -423,7 +421,7 @@
    <script type="module" src="/js/cargar-datos.js"></script>
    <!-- FIN | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
    <!-- script del filtrado de articulos -->
-   <script type="module" src="./js/filtrar-articulos.js"></script>
+   <script type="module" src="/js/filtrar-articulos.js"></script>
 </body>
 
 </html>
