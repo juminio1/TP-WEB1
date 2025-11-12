@@ -174,7 +174,6 @@ body {
       right: 0;
       bottom: 0;
       align-items: end;
-      /* width: 300px; */
       background-color: var(--dark-color-fondo);
       padding: 2rem;
       box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.500);
@@ -237,11 +236,6 @@ body {
       margin: 0%;
       padding: 0%;
    }
-
-   /*#header {
-      display: flex;
-      align-items: center;
-   }*/
 
    #seccion-categoria {
       display: grid;
