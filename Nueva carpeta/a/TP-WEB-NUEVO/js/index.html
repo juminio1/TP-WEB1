@@ -5,10 +5,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Grupo 16 | Personajes</title>
-   <link rel="stylesheet" href="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-encabezado-footer.css">
-   <link rel="stylesheet" href="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-principal.css">
-   <link rel="stylesheet" href="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/css/temas-colores-fuentes.css">
-   <link rel="stylesheet" href="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/css/estilos-responsive.css">
+
+   <link rel="stylesheet" href="/css/estilos-encabezado-footer.css">
+   <link rel="stylesheet" href="/css/estilos-principal.css">
+   <link rel="stylesheet" href="/css/temas-colores-fuentes.css">
+
+   <!-- Utilizamos librerias solo para los iconos -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -16,40 +19,36 @@
 
    <header id="#header" class="estiloHeaderppal">
 
-      <a class="btn-flotante" id="logo" href="#inicio">
-         <p style="color: white; "></p>
-         <img src="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/up-arrow.png" alt="">
-      </a>
       <!--Primera columna-->
       <div class="logo-categoria">
-         <!-- <button class="boton-abrir">Abrir</button> -->
-         <div id="logo"><img src="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/mascaraSinFondoBlanco.png" alt="logo"
+         <div id="logo"><img src="/assets/img/mascaraSinFondoBlanco.png" alt="logo"
                height="100px"></div>
-         <nav id="navegacion-categoria" class="nav-visibility">
 
-            <a href="#" id="tab-categoria-1" class="tab-categoria">Súper Héroes</a>
+               
+               <nav id="navegacion-categoria" class="nav-categoria ">
+                  <!-- boton cerrar menu -->
+                  <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-circle-fill"></i></button>
+                  
+                  <a href="#" id="tab-categoria-1" class="tab-categoria">Súper Héroes</a>
             <a href="#" id="tab-categoria-2" class="tab-categoria">Villanos</a>
             <a href="#" id="tab-categoria-3" class="tab-categoria">Anti Héroes</a>
             <a href="#" id="tab-categoria-4" class="tab-categoria">Dioses</a>
             <a href="#" id="tab-categoria-5" class="tab-categoria">Animal</a>
-            <!-- <button class="boton-cerrar">
-               Cerrar
-            </button> -->
-         </nav>
+         </nav> -
+
       </div>
       <!--Segunda columna-->
       <div class="buscador-iconos">
-         <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener">
-            <label for="q"></label>
             <input id="q" name="q" type="search" placeholder="Buscar..." required>
-            <input type="hidden" name="as_sitesearch" value="tusitio.com">
+            
          </form>
-         </form>
-         <div class="iconos">
+      </form>
+      <div class="iconos">
+         <img src="/assets/img/account.png" alt="accounts">
+         <img src="/assets/img/contrast.png" alt="contraste">
 
-            <img src="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/account.png" alt="accounts">
-            <img src="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/contrast.png" alt="contraste">
-            <img src="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/assets/img/notification.png" alt="notificaciones">
+         <!-- boton abrir menu -->
+            <button id="abrir" class="abrir-menu "> <i class="bi bi-list"></i> </button>
 
          </div>
       </div>
@@ -61,11 +60,8 @@
    <main>
       <section id="seccion-filtros">
       </section>
-
-      <!--<div class="titulo-categoria">
-         <h1> Superheroes </h1>
-      </div> -->
-
+      
+      <p id="noResultados" class="no-resultados"> No se han encontrado resultados</p>
       <section id="seccion-categoria">
          <article id="categoria00-item01" class="articulo-categoria item01">
             <header class="header-articulo">
@@ -405,14 +401,6 @@
          <a href="#" id="tab-categoria-3" class="tab-categoria">Anti Héroes</a>
          <a href="#" id="tab-categoria-4" class="tab-categoria">Dioses</a>
          <a href="#" id="tab-categoria-5" class="tab-categoria">Animal</a>
-         <!--       
-         <nav id="navegacion-categoria">
-         </nav>
-         <a href=#superheroes> Superheroes</a>
-         <a href=#villanos> Villanos</a>
-         <a href=#antiheroes> Antiheroes</a>
-         <a href=#dioses> Dioses</a>
-         <a href=#animales> Animales</a> -->
       </div>
       <div class="divFooter">
          <div class="divFooter" id="footerRight">
@@ -428,9 +416,13 @@
       </div>
    </footer>
 
+   <!-- script del menuDesplegable -->
+   <script src="/js/menuDesplegable.js"></script>
    <!-- INICIO | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
-   <script type="module" src="/TP-WEB1/Nueva carpeta/a/TP-WEB-NUEVO/js/cargar-datos.js"></script>
+   <script type="module" src="/js/cargar-datos.js"></script>
    <!-- FIN | NO MODIFICAR/NO QUITAR: 'cargar-datos.js' realiza la carga de datos -->
+   <!-- script del filtrado de articulos -->
+   <script type="module" src="/js/filtrar-articulos.js"></script>
 </body>
 
 </html>

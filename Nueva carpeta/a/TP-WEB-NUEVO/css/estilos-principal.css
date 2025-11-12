@@ -5,9 +5,8 @@
    padding: 0%;
 }
 
-
 body {
-   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-image: url(/assets/img/fondofinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -44,21 +43,12 @@ body {
    transform: translateY(-7px);
 }
 
-/* @media only screen and (max-width: 600px) { */
-.btn-flotante {
-   font-size: 14px;
-   padding: 12px 20px;
-   bottom: 50px;
-   right: 20px;
-}
-
-/* } */
-
 .articulo-categoria {
    border: solid 1px black;
    background-color: #333333;
    text-align: justify;
    padding: 20px;
+   color: white;
 }
 
 #qr-code {
@@ -84,16 +74,259 @@ body {
 .item-valor-nombre {
    margin-top: 15px;
    font-size: 16px;
-   color: #020405;
+   color: #998a05;
    text-align: left;
 }
 
 .item-valor-autor {
    font-size: 16px;
-   color: #020405;
+   color: #839b16;
    text-align: left;
 }
 
+.abrir-menu {
+   background-color: rgba(0, 0, 0, 0.01);
+   color: white;
+   border: 0;
+   width: 10px;
+   justify-content: right;
+   text-decoration: none;
+
+   /* padding: 0%;
+   margin: 0%; */
+}
+
+.cerrar-menu {
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
+   border: 0;
+
+}
+
+/* @media screen and (max-width: 48rem) { */
+@media screen and (max-width: 600px) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   /* body {
+      overflow-x: hidden;
+   } */
+
+   .estiloHeaderppal {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+   }
+
+   .logo-categoria {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+   }
+
+   .iconos {
+      gap: 10px;
+      align-items: center;
+   }
+
+   .buscador-iconos {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+   /* menu desplegable */
+   .abrir-menu .bi-list {
+      font-size: 30px;
+      /* Un tamaño típico para iconos grandes en móvil, igual que la imagen de 30px */
+      line-height: 1;
+      /* Para ayudar a la alineación vertical */
+      display: block;
+      /* Para asegurarse de que se comporte bien con el tamaño */
+   }
+
+   .abrir-menu {
+      width: auto;
+      padding: 5px;
+   }
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: block;
+   }
+
+   nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      align-items: end;
+      /* width: 300px; */
+      background-color: var(--dark-color-fondo);
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.500);
+
+   }
+
+   nav.visible {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .nav-categoria {
+      flex-direction: column;
+      align-items: end;
+   }
+
+   footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+   }
+
+   #footerCenter {
+      text-align: center;
+      margin-top: 20px;
+   }
+
+   #footerRight {
+      width: auto;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+   #footerRight div {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+   }
+
+   footer p em {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+   }
+
+}
+
+.btn-flotante {
+   font-size: 14px;
+   /* padding: 12px 20px; */
+   /* bottom: 50px; */
+   max-width: 5em;
+   right: 20px;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   /*#header {
+      display: flex;
+      align-items: center;
+   }*/
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /*align-items: center;*/
+   }
+
+   /* El footer principal ya está bien: apilado y centrado */
+   footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 0;
+      /* Agregamos un poco más de padding vertical para tabletas */
+   }
+
+   /* Aseguramos que los contenedores hijos también centren su contenido y ocupen todo el ancho */
+   #logoFooterLeft,
+   #footerCenter,
+   #footerRight {
+      width: 100%;
+      /* Ocupa todo el ancho disponible para centrar mejor */
+      margin-bottom: 25px;
+      /* Separación visual entre las secciones */
+      text-align: center;
+   }
+
+   /* El menú central (que está en columna) */
+   #footerCenter {
+      /* Para evitar que los enlaces se alineen a la izquierda del contenedor */
+      align-items: center;
+   }
+
+   /* Los íconos sociales dentro de #footerRight */
+   #footerRight {
+      /* Usamos flexbox para centrar la fila de íconos sociales */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* El texto de copyright */
+   footer p em {
+      margin-top: 15px;
+      /* Espacio entre los íconos y el copyright */
+   }
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: none;
+
+   }
+}
+
+@media screen and (min-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   .estiloHeaderppal {
+      min-width: 50%;
+   }
+
+   .iconos,
+   .buscador-iconos {
+      align-items: center;
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /*align-items: center;*/
+   }
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: none;
+
+   }
+
+}
+
+#seccion-categoria{
+   min-height: 100%;
+}  
 .fullscreen {
    position: fixed;
    top: 0;
