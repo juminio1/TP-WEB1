@@ -125,10 +125,6 @@ body {
    font-size: 1.2rem;
 }
 
-
-
-
-
 .btn-flotante {
    font-size: 14px;
    /* padding: 12px 20px; */
@@ -150,17 +146,38 @@ body {
       /* <-- NUEVO (empuja logo a la izq. y buscador a la der.) */
       align-items: center;
       padding: 10px;
+      width: auto;
    }
 
    .logo-categoria {
       flex-direction: row;
-      align-items: flex-start;
+      /* align-items: flex-start; */
       /* width: 100%; */
    }
 
    .iconos {
       gap: 10px;
       align-items: center;
+   }
+
+   #q {
+      width: 180px;
+      /* más chico que los 250px originales */
+      height: 25px;
+      font-size: 0.8rem;
+      padding-left: 10px;
+      border-radius: 20px;
+   }
+
+   .iconos img {
+      width: 24px;
+      /* más chico que los 30px originales */
+      height: auto;
+   }
+
+   .buscador-iconos {
+      gap: 10px;
+      padding: 5px;
    }
 
    .buscador-iconos {
@@ -178,7 +195,8 @@ body {
 
    /* menu desplegable */
    .abrir-menu .bi-list {
-      font-size: 30px;
+  
+      font-size: 17px;
       /* Un tamaño típico para iconos grandes en móvil, igual que la imagen de 30px */
       line-height: 1;
       /* Para ayudar a la alineación vertical */
@@ -207,6 +225,7 @@ body {
       right: 0;
       bottom: 0;
       align-items: end;
+      
       /* width: 300px; */
       background-color: var(--dark-color-fondo);
       padding: 2rem;
