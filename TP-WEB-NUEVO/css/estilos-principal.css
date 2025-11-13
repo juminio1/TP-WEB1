@@ -91,8 +91,8 @@ body {
 }
 
 /* TITULO DE LOS PERSONAJES*/
-.item-valor-nombre{
-   color: white ;
+.item-valor-nombre {
+   color: white;
    text-align: center;
    font-size: 1.3rem;
    padding-bottom: 8px;
@@ -101,31 +101,41 @@ body {
 }
 
 /* AUTORES */
-.item-valor-autor{
+.item-valor-autor {
    color: rgb(214, 206, 206);
    text-align: center;
    font-size: 1.02rem;
    padding-bottom: 8px;
 }
 
-.item-valor-descripcion{
+.item-valor-descripcion {
    color: rgb(214, 206, 206);
    padding-bottom: 8px;
    font-size: 1.1rem;
 }
 
 /* RATING */
-.item-valor-rating{
+.item-valor-rating {
    padding-bottom: 5px;
 }
 
 /* HABILIDAD , CARACTER , ORIGEN , ROPA , RAZA */
-.detalle-articulo h4{
+.detalle-articulo h4 {
    padding: 5px;
    font-size: 1.2rem;
 }
 
 
+
+
+
+.btn-flotante {
+   font-size: 14px;
+   /* padding: 12px 20px; */
+   /* bottom: 50px; */
+   max-width: 5em;
+   right: 20px;
+}
 
 @media screen and (max-width: 48rem) {
    * {
@@ -134,12 +144,13 @@ body {
    }
 
    .estiloHeaderppal {
-   display: flex;          
-   flex-direction: row;     
-   justify-content: space-between; /* <-- NUEVO (empuja logo a la izq. y buscador a la der.) */
-   align-items: center;    
-   padding: 10px;
-}
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* <-- NUEVO (empuja logo a la izq. y buscador a la der.) */
+      align-items: center;
+      padding: 10px;
+   }
 
    .logo-categoria {
       flex-direction: row;
@@ -158,12 +169,13 @@ body {
       justify-content: flex-end;
       width: 100%;
    }
-   
+
 
    #seccion-categoria {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
    }
+
    /* menu desplegable */
    .abrir-menu .bi-list {
       font-size: 30px;
@@ -245,16 +257,7 @@ body {
 
 }
 
-.btn-flotante {
-   font-size: 14px;
-   /* padding: 12px 20px; */
-   /* bottom: 50px; */
-   max-width: 5em;
-   right: 20px;
-}
-
-
-@media screen and (min-width: 600px) and (max-width: 64rem) {
+@media screen and (min-width: 48rem) and (max-width: 64rem) {
    * {
       margin: 0%;
       padding: 0%;
@@ -347,9 +350,10 @@ body {
 
 }
 
-#seccion-categoria{
+#seccion-categoria {
    min-height: 100%;
-}  
+}
+
 .fullscreen {
    position: fixed;
    top: 0;
