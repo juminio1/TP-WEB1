@@ -38,19 +38,18 @@ if (configuracion["modo-test-prod"] === "prod") {
    tabCategoria1.click();
 };
 
-
 const articulos = document.querySelectorAll("article");
-const imagenes = document.querySelectorAll(".item-valor-portada")
 
 articulos.forEach((articulo) => {
    articulo.addEventListener("click", () => {
+      // Aplica fullscreen en el article
       articulo.classList.toggle("fullscreen");
+
+      // Busca la imagen dentro del article y aplica el nuevo estilo
+      const imagen = articulo.querySelector(".item-valor-portada");
+      if (imagen) {
+         imagen.classList.toggle("item-valor-portada-fullscreen");
+      }
    });
 });
 
-imagenes.forEach((imagen) => {
-   imagen.addEventListener("click", () => {
-      imagen.classList.toggle("item-valor-portada-fullscreen");
-   });
-
-});

@@ -1,8 +1,9 @@
 ﻿/* URL Paleta de colores LIGHT: https://www.coloreasily.com/?colors=bd8c3e-020405-605e43-d9d59a-5394b1 */
 /* URL Paleta de colores DARK: https://www.coloreasily.com/?colors=b67d6b-020405-d9d59a-ac9ba2-160b09 */
-@import url('https://fonts.google.com/share?selection.family=Jersey+15');
-@import url('https://fonts.google.com/share?selection.family=Jersey+15|Notable');
-@import url('https://fonts.google.com/share?selection.family=Jersey+15|Limelight|Notable');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
 
 :root {
    --light-color-texto: #bd8c3e;
