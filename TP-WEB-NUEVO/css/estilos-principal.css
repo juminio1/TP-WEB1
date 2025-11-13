@@ -6,7 +6,7 @@
 }
 
 body {
-   background-image: url(/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-image: url(/assets/img/fondofinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -71,19 +71,6 @@ body {
    padding-top: 5%;
 }
 
-.item-valor-nombre {
-   margin-top: 15px;
-   font-size: 16px;
-   color: #998a05;
-   text-align: left;
-}
-
-.item-valor-autor {
-   font-size: 16px;
-   color: #839b16;
-   text-align: left;
-}
-
 .abrir-menu {
    background-color: rgba(0, 0, 0, 0.01);
    color: white;
@@ -103,8 +90,44 @@ body {
 
 }
 
-/* @media screen and (max-width: 48rem) { */
-@media screen and (max-width: 600px) {
+/* TITULO DE LOS PERSONAJES*/
+.item-valor-nombre{
+   color: white ;
+   text-align: center;
+   font-size: 1.3rem;
+   padding-bottom: 8px;
+   font-family: "Roboto Mono";
+
+}
+
+/* AUTORES */
+.item-valor-autor{
+   color: rgb(214, 206, 206);
+   text-align: center;
+   font-size: 1.02rem;
+   padding-bottom: 8px;
+}
+
+.item-valor-descripcion{
+   color: rgb(214, 206, 206);
+   padding-bottom: 8px;
+   font-size: 1.1rem;
+}
+
+/* RATING */
+.item-valor-rating{
+   padding-bottom: 5px;
+}
+
+/* HABILIDAD , CARACTER , ORIGEN , ROPA , RAZA */
+.detalle-articulo h4{
+   padding: 5px;
+   font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 48rem) {
    * {
       margin: 0%;
       padding: 0%;
@@ -217,6 +240,7 @@ body {
       display: block;
       text-align: center;
       margin-top: 15px;
+      /*align-items: center;*/
    }
 
 }
@@ -332,7 +356,7 @@ body {
    left: 0;
    width: 100vw;
    height: 100vh;
-   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-image: url(/assets/img/fondofinal.jpg);
    z-index: 9999;
    overflow: auto;
 }
