@@ -1,0 +1,388 @@
+.estiloHeaderppal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+}
+
+.logo-categoria {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo img {
+    max-height: 5rem;
+}
+
+#navegacion-categoria {
+
+    display: flex;
+    /*utilizamos el display: flex; para que se ponga uno al lado del otro */
+    gap: 20px;
+}
+
+.tab-categoria {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+    font-family: "Roboto Slab"; /* agregado 11/11*/
+    letter-spacing: 1px; /* agregado 11/11*/
+    
+}
+
+.tab-categoria:hover {
+    border-bottom: 2px solid #5394b1;
+}
+
+#q {
+    display: flex;
+    align-items: center;
+    width: 320px; /* agregado 11/11 alargue un poco el buscador*/
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.no-resultados {
+    color: red;
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+    display: none;
+}
+
+.buscador-iconos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 5px;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.iconos img {
+    width: 30px;
+    height: auto;
+    padding: 5px; /* agregado 11/11*/
+}
+
+footer {
+    background-color: var(--dark-color-fondo);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.divFooter {
+    max-width: 100%;
+}
+
+#footerCenter {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#footerRight {
+display: flex;
+flex-direction: row;
+width: 100px;
+align-content: center;
+padding-right: 50;
+}
+
+
+#footerRight {
+    display: flex;
+    flex-direction: row;
+    /* Quitar el width: 100px; */
+    gap: 20px; /* Separación entre los iconos */
+    align-items: center;
+    padding-right: 50px; /* Corregido a 50px */
+
+}
+
+#footerRight a img {
+    width: 30px; 
+    height: auto;
+    /* Para que no se vean pegadas */
+    margin: 0 10px; 
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 48rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   .estiloHeaderppal {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      /* <-- NUEVO (empuja logo a la izq. y buscador a la der.) */
+      align-items: center;
+      padding: 10px;
+      width: auto;
+   }
+
+   .logo-categoria {
+      flex-direction: row;
+      /* align-items: flex-start; */
+      /* width: 100%; */
+   }
+
+   .iconos {
+      gap: 10px;
+      align-items: center;
+   }
+
+   #q {
+      width: 180px;
+      /* más chico que los 250px originales */
+      height: 25px;
+      font-size: 0.8rem;
+      padding-left: 10px;
+      border-radius: 20px;
+   }
+
+   .iconos img {
+      width: 24px;
+      /* más chico que los 30px originales */
+      height: auto;
+   }
+
+   .buscador-iconos {
+      gap: 10px;
+      padding: 5px;
+   }
+
+   .buscador-iconos {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      width: 100%;
+   }
+
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   /* menu desplegable */
+   .abrir-menu .bi-list {
+  
+      font-size: 17px;
+      /* Un tamaño típico para iconos grandes en móvil, igual que la imagen de 30px */
+      line-height: 1;
+      /* Para ayudar a la alineación vertical */
+      display: block;
+      /* Para asegurarse de que se comporte bien con el tamaño */
+   }
+
+   .abrir-menu {
+      width: auto;
+      padding: 5px;
+   }
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: block;
+   }
+
+   nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      align-items: end;
+      
+      /* width: 300px; */
+      background-color: var(--dark-color-fondo);
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.500);
+
+   }
+
+   nav.visible {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .nav-categoria {
+      flex-direction: column;
+      align-items: end;
+   }
+
+   footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+   }
+
+   #footerCenter {
+      text-align: center;
+      margin-top: 20px;
+   }
+
+   #footerRight {
+      width: auto;
+      justify-content: center;
+      margin-top: 30px;
+   }
+
+   #footerRight div {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+   }
+
+   footer p em {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      /*align-items: center;*/
+   }
+
+}
+
+@media screen and (min-width: 48rem) and (max-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   /*#header {
+      display: flex;
+      align-items: center;
+   }*/
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /*align-items: center;*/
+   }
+
+   /* El footer principal ya está bien: apilado y centrado */
+   footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 0;
+      /* Agregamos un poco más de padding vertical para tabletas */
+   }
+
+   /* Aseguramos que los contenedores hijos también centren su contenido y ocupen todo el ancho */
+   #logoFooterLeft,
+   #footerCenter,
+   #footerRight {
+      width: 100%;
+      /* Ocupa todo el ancho disponible para centrar mejor */
+      margin-bottom: 25px;
+      /* Separación visual entre las secciones */
+      text-align: center;
+   }
+
+   /* El menú central (que está en columna) */
+   #footerCenter {
+      /* Para evitar que los enlaces se alineen a la izquierda del contenedor */
+      align-items: center;
+   }
+
+   /* Los íconos sociales dentro de #footerRight */
+   #footerRight {
+      /* Usamos flexbox para centrar la fila de íconos sociales */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   /* El texto de copyright */
+   footer p em {
+      margin-top: 15px;
+      /* Espacio entre los íconos y el copyright */
+   }
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: none;
+
+   }
+}
+
+
+
+@media screen and (min-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   .estiloHeaderppal {
+      min-width: 50%;
+   }
+
+   .iconos,
+   .buscador-iconos {
+      align-items: center;
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /*align-items: center;*/
+   }
+
+   .abrir-menu,
+   .cerrar-menu {
+      display: none;
+
+   }
+
+}
+
+#seccion-categoria {
+   min-height: 100%;
+}
+
+.fullscreen {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-image: url(/assets/img/fondofinal.jpg);
+   z-index: 9999;
+   overflow: auto;
+}
+
+.item-valor-portada-fullscreen {
+   width: 50%;
+   height: 700px;
+   object-fit: fill;
+   padding-top: 5%;
+}

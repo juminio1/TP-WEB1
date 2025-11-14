@@ -1,0 +1,311 @@
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenido-carrusel{
+    border: 10px solid black;
+    height: 200px;
+   overflow: hidden;
+}
+
+.itemCarrusel{
+    border: 1px solid black;
+    height: 200px;
+    position: relative;
+}
+
+.tarjetacarrusel{
+    height: 100%;
+}
+
+.flechasCarrusel{
+    /* background-color: blue; */
+/*     
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjetacarrusel-1{
+    background-color: blue;
+}
+#tarjetacarrusel-2{
+    background-color: red;
+} 
+#tarjetacarrusel-3{
+    background-color: skyblue;
+} */ 
+
+/* body{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+#logo{
+    height: 100px ;
+    width: 100px;
+}
+
+#logoFooterLeft img{ 
+    max-height:200px ;
+    max-width: 200px;
+    
+}
+
+.footer-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden
+}
+ */
+
+ * {
+   margin: 0%;
+   padding: 0%;
+}
+
+
+body {
+   background-image: url(/TP-WEB1/Nueva\ carpeta/a/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   /* fija la imagen mientras el contenido se desplaza*/
+}
+
+.btn-flotante {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   border-radius: 5px;
+   /* Color de fondo */
+   /*padding: 18px 30px;*/
+   /* Relleno del boton */
+   position: fixed;
+   bottom: 80px;
+   right: 40px;
+   /* transition: all 300ms ease 0ms;*/
+   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+   /*z-index: 99;*/
+}
+
+.btn-flotante img {
+   width: 75%;
+   height: auto;
+}
+
+.btn-flotante:hover {
+   background-color: #625e76;
+   /* Color de fondo al pasar el cursor */
+   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+   transform: translateY(-7px);
+}
+
+.articulo-categoria {
+
+   color: white;
+
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+ /* vista de telefonos  */
+
+
+@media only screen and (max-width: 600px) {
+   .btn-flotante {
+      font-size: 14px;
+      padding: 12px 20px;
+      bottom: 50px;
+      right: 20px;
+   }
+}
+
+#seccion-categoria {
+   min-height: 720px;
+}
+
+.articulo-categoria {
+   border: solid 1px black;
+   background-color: #333333;
+   /*background-color: #b67d6b;*/
+}
+
+.articulo-categoria {
+   text-align: justify;
+   padding: 20px;
+}
+
+#qr-code {
+   width: 100px;
+   height: 100px;
+}
+
+#seccion-categoria {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2em;
+   padding: 20px;
+}
+
+.item-valor-portada {
+   width: 100%;
+   height: 500px;
+   object-fit: fill;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+VISTA DE TABLETS 
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   /* #header{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 5%;
+      flex-direction: row;  
+      /* display: flex ;
+      flex-wrap: wrap;
+      width: 33.33%; */
+  /*       
+   } */ 
+    #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+   }
+
+    footer {
+        flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
+        align-items: center;    /* Centra los elementos apilados */
+        text-align: center;
+        padding: 5%;
+        justify-content: center;
+    }
+}
+
+
+/* 
+-------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 48rem) and (max-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   #header{
+      display: flex;
+      align-items: center;  
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+   }
+
+   footer {
+        flex-direction: column; /* Apila todos los elementos (logo, lista, redes) */
+        align-items: center;    /* Centra los elementos apilados */
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+   * {
+      margin: 0%;
+      padding: 0%;
+   }
+
+   #seccion-categoria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+   }
+   
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* RESPONSIVE DE VISTA PC  */
+
+#carouselExampleCaptions {
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Imágenes del carrusel */
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Texto dentro del carrusel */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 40px;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: auto;
+  
+}
+
