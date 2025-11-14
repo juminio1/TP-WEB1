@@ -399,6 +399,9 @@ body {
 .carousel-caption {
  
     position: absolute;
+    background-color: #625e76;
+   border-radius: 20px;
+   opacity: 0.7;
     right: 15%;
     bottom: 1.25rem;
     left: 15%;
