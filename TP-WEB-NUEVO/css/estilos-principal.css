@@ -398,22 +398,14 @@ body {
  
 .carousel-caption {
  
-  background-color: rgba(0, 0, 0, 0.6);
-
-  padding: 20px;
-
-  border-radius: 10px;
-
-  bottom: 40px;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  max-width: 80%;
-
-
-
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
 }
  
 .carousel-caption h5 {
