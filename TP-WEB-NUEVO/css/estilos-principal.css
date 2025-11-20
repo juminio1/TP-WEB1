@@ -1,4 +1,4 @@
-﻿﻿/* @import url("temas-colores-fuentes.css"); */
+﻿﻿﻿/* @import url("temas-colores-fuentes.css"); */
 
 * {
    margin: 0%;
@@ -434,10 +434,7 @@ body {
   margin: 0 auto;
 
 }
- 
-/*  vista  hasta 600px */
 
-@media screen and (max-width: 600px) {
 
   
  
