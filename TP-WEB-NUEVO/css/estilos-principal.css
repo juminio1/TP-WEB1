@@ -6,7 +6,7 @@
 }
 
 body {
-   background-image: url(/TP-WEB1/TP-WEB-NUEVO/assets/img/fondofinal.jpg);
+   background-image: url(/assets/img/fondofinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -434,10 +434,7 @@ body {
   margin: 0 auto;
 
 }
- 
-/*  vista  hasta 600px */
 
-@media screen and (max-width: 600px) {
 
   
  
