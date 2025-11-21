@@ -279,8 +279,8 @@ body {
       margin-top: 15px;
       /*align-items: center;*/
    }
-
 }
+
 
 @media screen and (min-width: 48rem) and (max-width: 64rem) {
    * {
@@ -490,3 +490,4 @@ body {
    object-fit: fill;
    padding-top: 5%;
 }
+
