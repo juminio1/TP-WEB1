@@ -6,7 +6,7 @@
 }
 
 body {
-   background-image: url(/assets/img/fondofinal.jpg);
+   background-image: url(/TP-WEB1/TP-WEB-NUEVO/assets/img/FondoFinal.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -148,6 +148,7 @@ body {
       align-items: center;
       padding: 10px;
       width: auto;
+      
    }
 
    .logo-categoria {
@@ -196,23 +197,26 @@ body {
 
    /* menu desplegable */
    .abrir-menu .bi-list {
-  
+    z-index: 9999;
       font-size: 17px;
       /* Un tamaño típico para iconos grandes en móvil, igual que la imagen de 30px */
       line-height: 1;
       /* Para ayudar a la alineación vertical */
       display: block;
       /* Para asegurarse de que se comporte bien con el tamaño */
+      z-index: 9999;
    }
 
    .abrir-menu {
       width: auto;
       padding: 5px;
+
    }
 
    .abrir-menu,
    .cerrar-menu {
       display: block;
+      
    }
 
    nav {
@@ -242,6 +246,7 @@ body {
    .nav-categoria {
       flex-direction: column;
       align-items: end;
+      z-index: 9999;
    }
 
    footer {
@@ -398,7 +403,7 @@ body {
  
 .carousel-caption {
  
-    position: absolute;
+    /* position: absolute; */
     background-color: #625e76;
    border-radius: 20px;
    opacity: 0.7;
