@@ -24,7 +24,7 @@
 }
 
 .tab-categoria {
-    color: white;
+    color: var(--dark-color-texto);
     text-decoration: none;
     font-size: 18px;
     padding: 5px 0;
@@ -36,7 +36,7 @@
 }
 
 .tab-categoria:hover {
-    border-bottom: 2px solid #5394b1;
+    border-bottom: 2px solid var(--dark-color-acento-1);
 }
 
 #q {
@@ -80,7 +80,7 @@
 }
 
 footer {
-    background-color: var(--dark-color-fondo);
+    background-color: var(--bg-footer);
     color: white;
     display: flex;
     justify-content: space-around;
