@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
     const emailInput = document.getElementById('email');
     const validateBtn = document.querySelector('.btn');
     const resultado = document.createElement('p');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (valorGuardado) {
             input.value = valorGuardado;
         }
-    });
+    }); */
 
     // --- Validación Email ---
     validateBtn.addEventListener('click', (event) => {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Validación y Guardado en LocalStorage ---
+   /* // --- Validación y Guardado en LocalStorage ---
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         let valid = true;
@@ -107,4 +107,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Datos guardados en LocalStorage correctamente!');
         }
     });
-});
+}); */

@@ -34,6 +34,24 @@ window.addEventListener('click', (e) => {
   }
 });
 
+// mensaje al iframe para que cierre el popup
+window.addEventListener("message", (event) => {
+  if (event.data === "cerrarLogin") {
+
+    // Ocultar el modal
+    loginModal.style.display = "none";
+
+    // Eliminar el iframe como hacés siempre
+    if (loginIframe) {
+      modalContent.removeChild(loginIframe);
+      loginIframe = null;
+    }
+
+    console.log("Login correcto → Popup cerrado");
+  }
+});
+
+
 
 
 

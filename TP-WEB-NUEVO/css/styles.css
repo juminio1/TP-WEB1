@@ -41,7 +41,7 @@ input[type="password"]{
 
 .form-contraseña{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .ojo-mostrar{
@@ -55,8 +55,7 @@ input[type="password"]{
     font-size: 18px;
     color: #888;
     padding: 0;
-
-}
+} 
 
 .recuperar-contraseña{
     display: block;
@@ -112,13 +111,11 @@ a:hover{
 
 .texto-indica{
     text-align: center;
-    color: #555;
+    color: white;
     font-size: 1rem;
     line-height: 1.5; /* Interlineado */
     margin-bottom: 25px;
 }
-
-
 
 .box {
   max-width: 700px;
