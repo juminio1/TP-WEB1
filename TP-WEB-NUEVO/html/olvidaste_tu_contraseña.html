@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olvidaste tu contraseña</title>
-    <link rel="stylesheet" href="/TP-WEB1/TP-WEB-NUEVO/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -17,13 +17,13 @@
                     a seguir para generar una nueva contraseña
                 </p>
 
-            <div class="form-emal">
-                <input type="email" id="email" name="email" placeholder="Email*" required>
+            <div class="form-email">
+                <input type="email" id="email" name="email" placeholder="Email*">
             </div>
             <br>
 
             <div>
-                <button type="submit" class="boton-azul">CONTINUAR</button>
+                <button type="submit" class="boton-azul" disabled>CONTINUAR</button>
             </div>
 
             <p class="terminos-condiciones">
@@ -34,6 +34,7 @@
         </form>
     </div>
 
+    <script type="module" src="/js/validarRecuperarContrseña.js"></script>
 </body>
 
 </html>
