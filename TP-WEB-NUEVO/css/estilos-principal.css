@@ -13,6 +13,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     /* fija la imagen mientras el contenido se desplaza*/
  }
 
@@ -138,6 +141,7 @@
     color: var(--txt-color);
     padding-bottom: 8px;
     font-size: 1.1rem;
+    padding-top: 20px;
  }
 
  .detalle-articulo h4 {
@@ -149,7 +153,10 @@
 
  /* RATING */
  .item-valor-rating {
+    display: block;
     padding-bottom: 5px;
+   text-align: center;
+   font-size: 20px;
  }
 
  /* HABILIDAD , CARACTER , ORIGEN , ROPA , RAZA */
@@ -165,7 +172,7 @@
  }
 
  @media screen and (max-width: 48rem) {
-    * {
+    aa * {
        margin: 0%;
        padding: 0%;
     }
@@ -217,13 +224,16 @@
     }
 
     .buscador-iconos {
-    gap: 5px; /* Reducimos el espacio entre buscador e iconos */
-    padding: 0; /* Quitamos padding extra si lo hubiera */
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    width: auto; /* Dejamos que se ajuste al contenido */
-}
+       gap: 5px;
+       /* Reducimos el espacio entre buscador e iconos */
+       padding: 0;
+       /* Quitamos padding extra si lo hubiera */
+       flex-direction: row;
+       align-items: center;
+       justify-content: flex-end;
+       width: auto;
+       /* Dejamos que se ajuste al contenido */
+    }
 
 
     #seccion-categoria {
@@ -491,8 +501,8 @@
           height: 500px;
 
        }
- 
-/* vista más de 1024px */
+
+       /* vista más de 1024px */
 
        .carousel-caption h5 {
 
@@ -525,10 +535,9 @@
     overflow: auto;
  }
 
-.item-valor-portada-fullscreen {
-   width: 50%;
-   height: 700px;
-   object-fit: fill;
-   padding-top: 5%;
-}
-
+ .item-valor-portada-fullscreen {
+    width: 50%;
+    height: 700px;
+    object-fit: fill;
+    padding-top: 5%;
+ }
