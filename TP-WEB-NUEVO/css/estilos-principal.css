@@ -2,7 +2,7 @@
 
  * {
     margin: 0%;
-    padding: 0%;
+    /* padding: 0%; */
  }
 
  body {
@@ -19,7 +19,7 @@
     /* fija la imagen mientras el contenido se desplaza*/
  }
 
- /* --- CORRECCIÓN MODO OSCURO --- */
+ /* --- MODO OSCURO --- */
 
  #toggle {
     display: none;
@@ -27,27 +27,15 @@
 
  #label_toggle {
     position: relative;
-    /* Clave: Dejamos que fluya con los otros iconos */
     display: flex;
-    /* Para centrar el ícono dentro de su propia cajita */
-    align-items: center;
+    align-items: center; /* Para centrar el ícono dentro de su propia cajita */
     justify-content: center;
     font-size: 1.5rem;
-    /* Tamaño del sol/luna */
     cursor: pointer;
     margin-left: 15px;
-    /* Separación con la foto de perfil (account) */
     color: blueviolet;
-    /* Opcional: transición suave si cambia de color */
     transition: color 0.3s ease;
  }
-
- /* .dark {
-    background-color: #333;
-    color: white;
-    transition: all 0.5s ease;
-    /* Bajé un poco el tiempo para que se sienta más ágil */
-
 
  .btn-flotante {
     display: flex;
@@ -70,7 +58,6 @@
 
  .btn-flotante:hover {
     background-color: #625e76;
-    /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-7px);
  }
@@ -81,7 +68,7 @@
     color: var(--txt-color);
     text-align: justify;
     padding: 20px;
-    color: white;
+   
  }
 
  #qr-code {
@@ -90,8 +77,6 @@
  }
 
  #seccion-categoria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     padding: 20px;
     align-items: stretch;
@@ -144,12 +129,6 @@
     padding-top: 20px;
  }
 
- .detalle-articulo h4 {
-    padding: 5px;
-    font-size: 1.2rem;
-    color: var(--destacado);
-    /* Resalta los títulos internos */
- }
 
  /* RATING */
  .item-valor-rating {
@@ -163,14 +142,36 @@
  .detalle-articulo h4 {
     padding: 5px;
     font-size: 1.2rem;
- }
-
+    
+   }
+   
  .btn-flotante {
     font-size: 14px;
     max-width: 5em;
     right: 20px;
- }
-
+   }
+   
+   #seccion-categoria {
+      min-height: 100%;
+   }
+  
+   .fullscreen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: var(--bg-imagen);
+      z-index: 9999;
+      overflow: auto;
+   }
+  
+   .item-valor-portada-fullscreen {
+      width: 50%;
+      height: 700px;
+      object-fit: fill;
+      padding-top: 5%;
+   }
  @media screen and (max-width: 48rem) {
     aa * {
        margin: 0%;
@@ -181,14 +182,9 @@
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-       /* <-- NUEVO (empuja logo a la izq. y buscador a la der.) */
        align-items: center;
-       padding: 10px;
        width: auto;
-       width: 100%;
-       /* Fuerza el ancho completo */
        box-sizing: border-box;
-       /* Incluye el padding dentro del ancho para no agrandar */
        padding: 10px;
 
     }
@@ -204,8 +200,6 @@
 
     #q {
        width: 130px;
-       /* Bajamos de 180px a 130px para hacer espacio al menú */
-
        height: 25px;
        font-size: 0.8rem;
        padding-left: 10px;
@@ -214,10 +208,9 @@
 
     .iconos img {
        width: 24px;
-       /* más chico que los 30px originales */
        height: auto;
     }
-
+    
     .buscador-iconos {
        gap: 10px;
        padding: 5px;
@@ -225,14 +218,12 @@
 
     .buscador-iconos {
        gap: 5px;
-       /* Reducimos el espacio entre buscador e iconos */
        padding: 0;
-       /* Quitamos padding extra si lo hubiera */
        flex-direction: row;
        align-items: center;
        justify-content: flex-end;
        width: auto;
-       /* Dejamos que se ajuste al contenido */
+     
     }
 
 
@@ -243,15 +234,11 @@
 
     /* menu desplegable */
     .abrir-menu .bi-list {
-       z-index: 9999;
+      
        font-size: 17px;
-       /* Un tamaño típico para iconos grandes en móvil, igual que la imagen de 30px */
-       line-height: 1;
-       /* Para ayudar a la alineación vertical */
        display: block;
-       /* Para asegurarse de que se comporte bien con el tamaño */
        z-index: 9999;
-    }
+      }
 
     .abrir-menu {
        width: auto;
@@ -326,7 +313,6 @@
        display: block;
        text-align: center;
        margin-top: 15px;
-       /*align-items: center;*/
     }
 
  }
@@ -337,46 +323,32 @@
        padding: 0%;
     }
 
-    /*#header {
-      display: flex;
-      align-items: center;
-   }*/
-
     #seccion-categoria {
        display: grid;
        grid-template-columns: repeat(2, 1fr);
-       /*align-items: center;*/
     }
 
-    /* El footer principal ya está bien: apilado y centrado */
     footer {
        flex-direction: column;
        align-items: center;
        text-align: center;
        padding: 30px 0;
-       /* Agregamos un poco más de padding vertical para tabletas */
     }
 
-    /* Aseguramos que los contenedores hijos también centren su contenido y ocupen todo el ancho */
     #logoFooterLeft,
     #footerCenter,
     #footerRight {
        width: 100%;
-       /* Ocupa todo el ancho disponible para centrar mejor */
        margin-bottom: 25px;
-       /* Separación visual entre las secciones */
        text-align: center;
     }
 
-    /* El menú central (que está en columna) */
+    
     #footerCenter {
-       /* Para evitar que los enlaces se alineen a la izquierda del contenedor */
        align-items: center;
     }
 
-    /* Los íconos sociales dentro de #footerRight */
     #footerRight {
-       /* Usamos flexbox para centrar la fila de íconos sociales */
        display: flex;
        align-items: center;
        justify-content: center;
@@ -385,7 +357,6 @@
     /* El texto de copyright */
     footer p em {
        margin-top: 15px;
-       /* Espacio entre los íconos y el copyright */
     }
 
     .abrir-menu,
@@ -413,7 +384,6 @@
     #seccion-categoria {
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       /*align-items: center;*/
     }
 
     .abrir-menu,
@@ -422,7 +392,6 @@
 
     }
 
-    /* /////////////////////////// */
     /* Estilo base para todas las vistas */
 
     #carouselExampleCaptions {
@@ -518,26 +487,4 @@
 
     }
 
- }
-
- #seccion-categoria {
-    min-height: 100%;
- }
-
- .fullscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: var(--bg-imagen);
-    z-index: 9999;
-    overflow: auto;
- }
-
- .item-valor-portada-fullscreen {
-    width: 50%;
-    height: 700px;
-    object-fit: fill;
-    padding-top: 5%;
  }
