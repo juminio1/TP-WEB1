@@ -21,6 +21,7 @@
     display: flex;
     /*utilizamos el display: flex; para que se ponga uno al lado del otro */
     gap: 20px;
+    
 }
 
 .tab-categoria {

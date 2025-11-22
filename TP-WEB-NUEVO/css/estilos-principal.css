@@ -468,6 +468,7 @@
 
     }
 
+
     .carousel-caption p {
 
        font-size: 1rem;
@@ -490,6 +491,8 @@
           height: 500px;
 
        }
+ 
+/* vista más de 1024px */
 
        .carousel-caption h5 {
 
@@ -522,9 +525,10 @@
     overflow: auto;
  }
 
- .item-valor-portada-fullscreen {
-    width: 50%;
-    height: 700px;
-    object-fit: fill;
-    padding-top: 5%;
- }
+.item-valor-portada-fullscreen {
+   width: 50%;
+   height: 700px;
+   object-fit: fill;
+   padding-top: 5%;
+}
+
