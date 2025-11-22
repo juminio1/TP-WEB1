@@ -220,3 +220,18 @@ form.addEventListener("submit", function(e) {
 });
 
 
+    const inputPassword = document.getElementById("password");
+    const botonMostrar = document.getElementById("mostrar");
+
+    botonMostrar.addEventListener("click", function () {
+        if (inputPassword.type === "password") {
+            inputPassword.type = "text";   // Muestra la contraseña
+        } else {
+            inputPassword.type = "password"; // Oculta la contraseña
+            botonMostrar.textContent = "👁"; // Vuelve al ícono original
+        }
+    });
+
+
+
+
