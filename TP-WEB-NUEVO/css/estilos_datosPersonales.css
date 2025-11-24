@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/assets/img/fondofinal.jpg);
+  background-image: url(/TP-WEB1/TP-WEB-NUEVO/assets/img/FondoFinal.jpg);
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   color: #222;
@@ -66,7 +66,6 @@ hr {
   margin-bottom: 6px;
   color: #444;
 }
-
 
 .input {
   flex: 1;

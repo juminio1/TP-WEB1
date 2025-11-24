@@ -1,5 +1,5 @@
 body {
-  background-image: url(/assets/img/fondofinal.jpg);
+  background-image: url(/TP-WEB1/TP-WEB-NUEVO/assets/img/FondoFinal.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,6 +181,13 @@ hr {
   color: #444;
 }
 
+.datosInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
 
 .input {
   flex: 1;
@@ -200,6 +207,17 @@ hr {
   font-size: 14px;
   cursor: pointer;
 }
+
+.datosBtn {
+  background-color: #007b;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 .btn-sec {
   background: #f2f2f2;
