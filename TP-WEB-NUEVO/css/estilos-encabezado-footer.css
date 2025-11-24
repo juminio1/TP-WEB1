@@ -1,6 +1,11 @@
 .estiloHeaderppal {
     background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 10px 30px;
 }
+
 
 .logo-categoria {
     display: flex;
@@ -10,7 +15,8 @@
 
 #logo img {
     max-height: 5rem;
-} 
+}
+
 /* probando */
 
 #navegacion-categoria {
@@ -25,9 +31,9 @@
     padding: 5px 0;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s;
-    font-family: "Roboto Slab"; 
-    letter-spacing: 1px; 
-    
+    font-family: "Roboto Slab";
+    letter-spacing: 1px;
+
 }
 
 .tab-categoria:hover {
@@ -38,6 +44,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 320px;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
 }
 
 .no-resultados {
@@ -60,11 +70,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 5%;
 }
 
 .iconos img {
-    padding: 5px; 
+    padding: 5px;
+    width: 30px;
+    height: auto;
 }
 
 footer {
@@ -73,6 +86,8 @@ footer {
     display: flex;
     justify-content: space-around;
     position: relative;
+    flex-direction: row;
+    align-items: center;
 }
 
 .divFooter {
@@ -82,11 +97,14 @@ footer {
 #footerCenter {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: left;
 }
 
 #footerRight {
-display: flex;
-flex-direction: row;
-padding-right: 50;
+    display: flex;
+    flex-direction: row;
+    padding-right: 50;
+    width: 100px;
+    align-content: center;
 }
