@@ -17,6 +17,7 @@
     max-height: 5rem;
 }
 
+
 /* probando */
 
 #navegacion-categoria {
@@ -93,7 +94,9 @@ footer {
 .divFooter {
     max-width: 100%;
 }
-
+#logoFooterLeft.light-theme{
+    color: --color-txt ;
+}
 #footerCenter {
     display: flex;
     flex-direction: column;
