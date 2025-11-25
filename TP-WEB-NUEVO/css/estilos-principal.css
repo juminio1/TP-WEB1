@@ -352,6 +352,8 @@
        margin-top: 15px;
     }
 
+    
+
  }
 
  @media screen and (min-width: 48rem) and (max-width: 64rem) {
@@ -506,12 +508,14 @@
 
        object-position: center;
 
+       display: block;
+
     }
 
     .carousel-caption {
 
        /* position: absolute; */
-       background-color: #625e76;
+       background-color: #000000;
        border-radius: 20px;
        opacity: 0.7;
        right: 15%;
@@ -529,7 +533,7 @@
 
        font-weight: bold;
 
-       color: #fff;
+       color: #ffffff;
 
        margin-bottom: 10px;
 
@@ -540,7 +544,7 @@
 
        font-size: 1rem;
 
-       color: #ddd;
+       color: #ffffff;
 
        line-height: 1.5;
 
