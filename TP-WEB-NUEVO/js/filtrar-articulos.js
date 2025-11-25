@@ -42,7 +42,8 @@ buscador.addEventListener('input', () => {
             article.style.display = ''; 
             articulosVisibles++;       
         } else {
-            article.style.display = 'none'; 
+            article.style.display = 'none';
+            
         }
     });
 
