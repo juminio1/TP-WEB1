@@ -6,13 +6,13 @@
 
 
 :root {
-   --light-principal: url('/TP-WEB1/TP-WEB-NUEVO/assets/img/FondoFinalLight.jpg');
+   --light-principal: url('/assets/img/FondoFinalLight.jpg');
    --light-color-texto: #2c2c2c;
    --light-color-fondo: #BD8C3E;
    --light-color-acento-1: #b94528;
    --light-color-acento-2: #BD8C3E;
    --light-color-acento-3: #dee2e6;
-   --dark-principal: url('/TP-WEB1/TP-WEB-NUEVO/assets/img/fondofinal.jpg');
+   --dark-principal: url('/assets/img/fondofinal.jpg');
    --dark-color-texto: #d6cece;
    --dark-color-fondo: #020405;
    --dark-color-acento-1: #5394b1;
