@@ -29,6 +29,7 @@
    --bg-footer: var(--dark-color-fondo);
    --color-txt: var(--light-color-texto);
    --bg-imagen-light: var(--light-principal);
+   --light-fondo: var(--light-color-fondo);
 }
 
  .light-theme {
