@@ -9,7 +9,7 @@
    --light-principal: url('/assets/img/FondoFinalLight.jpg');
    --light-color-texto: #2c2c2c;
    --light-color-fondo: #BD8C3E;
-   --light-color-acento-1: #55b88f;
+   --light-color-acento-1: #b94528;
    --light-color-acento-2: #BD8C3E;
    --light-color-acento-3: #dee2e6;
    --dark-principal: url('/assets/img/fondofinal.jpg');
@@ -28,6 +28,8 @@
    --borde-color: var(--dark-color-acento-3);
    --bg-footer: var(--dark-color-fondo);
    --color-txt: var(--light-color-texto);
+   --bg-imagen-light: var(--light-principal);
+   --light-fondo: var(--light-color-fondo);
 }
 
  .light-theme {
