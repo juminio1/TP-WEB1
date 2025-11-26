@@ -1,0 +1,53 @@
+﻿/* URL Paleta de colores LIGHT: https://www.coloreasily.com/?colors=bd8c3e-020405-605e43-d9d59a-5394b1 */
+/* URL Paleta de colores DARK: https://www.coloreasily.com/?colors=b67d6b-020405-d9d59a-ac9ba2-160b09 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+
+:root {
+   --light-principal: url('/assets/img/FondoFinalLight.jpg');
+   --light-color-texto: #2c2c2c;
+   --light-color-fondo: #BD8C3E;
+   --light-color-acento-1: #b94528;
+   --light-color-acento-2: #BD8C3E;
+   --light-color-acento-3: #dee2e6;
+   --dark-principal: url('/assets/img/fondofinal.jpg');
+   --dark-color-texto: #d6cece;
+   --dark-color-fondo: #020405;
+   --dark-color-acento-1: #5394b1;
+   --dark-color-acento-2: #333333;
+   --dark-color-acento-3: #020405;
+
+
+   --bg-imagen: var(--dark-principal);
+   --bg-color: var(--dark-color-fondo);
+   --txt-color: var(--dark-color-texto);
+   --card-bg: var(--dark-color-acento-2);    
+   --destacado: var(--dark-color-acento-1);  
+   --borde-color: var(--dark-color-acento-3);
+   --bg-footer: var(--dark-color-fondo);
+   --color-txt: var(--light-color-texto);
+   --bg-imagen-light: var(--light-principal);
+   --light-fondo: var(--light-color-fondo);
+}
+
+ .light-theme {
+   color: var(--light-color-texto);
+   background-color: var(--light-color-fondo);
+}
+
+.dark-theme {
+   color: var(--dark-color-texto);
+   background-color: var(--dark-color-fondo);
+}
+
+body.light-theme {
+    --bg-imagen: var(--light-principal);
+    --bg-color: var(--light-color-fondo);
+    --txt-color: var(--light-color-texto);
+    --card-bg: var(--light-color-acento-2);  
+    --destacado: var(--light-color-acento-1);
+    --borde-color: var(--light-color-acento-3);
+    --bg-footer: var(--light-color-acento-1);
+}

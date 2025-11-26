@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="formulario">
+        <h2>Registrase</h2>
+
+        <form>
+
+            <div class="form-email">
+                <input type="email" id="email" name="email" placeholder="Email*">
+            </div>
+            <br>
+
+            <div class="form-contraseña">
+                <input type="password" id="password" name="password" placeholder="Contraseña*">
+                <button type="button" id="mostrar" class="ojo-mostrar">👁</button>
+            </div>
+
+            <div>
+                <button type="submit" class="boton-azul" id="btnRegistrarse" disabled>REGISTRATE</button>
+            </div>
+
+            <p class="registrarse">¿Ya tienes una cuenta? <a href="/js/index.html">Iniciar sesión</a></p>
+            <p class="terminos-condiciones">
+                Al continuar, confirmo que he leído los
+                <a href="terminosYcondiciones">Terminos y Condiciones</a> y las
+                <a href="politicas">Políticas de Privacidad</a>
+            </p>
+
+        </form>
+    </div>
+    
+    <script type="module" src="/js/validacion.js"></script>
+</body>
+</html>
