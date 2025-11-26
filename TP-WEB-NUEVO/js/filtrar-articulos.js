@@ -2,6 +2,7 @@
 const buscador = document.getElementById('q'); 
 const noResultados = document.getElementById('noResultados');
 const seccionCategoria = document.getElementById('seccion-categoria');
+const corrousel = document.getElementById('carouselExampleCaptions');
 
 
 buscador.addEventListener('input', () => {
@@ -43,6 +44,7 @@ buscador.addEventListener('input', () => {
             articulosVisibles++;       
         } else {
             article.style.display = 'none';
+            corrousel.style.display = 'none';
             
         }
     });

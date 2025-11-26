@@ -5,6 +5,7 @@ let toggle = document.getElementById('toggle');
 let label_toggle = document.getElementById('label_toggle');
 
 
+
 if (localStorage.getItem('tema') === 'light') {
     
     
@@ -36,6 +37,7 @@ toggle.addEventListener('change', (event) => {
         
         label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
         label_toggle.style.color = 'blueviolet'; 
+       
         
     } else {
         // MODO OSCURO 

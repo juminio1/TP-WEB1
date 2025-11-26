@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (valorGuardado) {
             input.value = valorGuardado;
         }
-    }); */
+    }); 
 
     // --- Validación Email ---
     validateBtn.addEventListener('click', (event) => {

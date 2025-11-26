@@ -13,10 +13,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 100vh;      
+    display: flex;          
+    flex-direction: column; 
+}
+
+ main {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    /* fija la imagen mientras el contenido se desplaza*/
  }
 
  /* --- MODO OSCURO --- */
@@ -111,9 +116,23 @@
     background-color: rgba(189, 140, 62, 0.8);
  }
 
+ 
+body.light-theme .articulo-categoria,
+body.light-theme .articulo-categoria .item-valor-autor,
+body.light-theme .articulo-categoria .item-valor-descripcion,
+body.light-theme .articulo-categoria .detalle-articulo h4,
+body.light-theme .articulo-categoria .detalle-articulo p {
+    color: #dee2e6 ;
+}
+
+.detalle-articulo h4,
+.detalle-articulo p {
+    color: gray; 
+}
+
  /* TITULO DE LOS PERSONAJES*/
  .item-valor-nombre {
-    color: white;
+    color:  white;
     text-align: center;
     font-size: 1.3rem;
     padding-bottom: 8px;
@@ -352,7 +371,7 @@
        margin-top: 15px;
     }
 
-    
+
 
  }
 
@@ -555,7 +574,7 @@
 
     /* vista más de 1024px */
 
-    @media screen and (min-width: 1025px) {
+    /* @media screen and (min-width: 1025px) {
 
        .carousel-item img {
 
@@ -565,7 +584,7 @@
 
        /* vista más de 1024px */
 
-       .carousel-caption h5 {
+      /* .carousel-caption h5 {
 
           font-size: 2rem;
 
@@ -577,6 +596,6 @@
 
        }
 
-    }
+    } */
 
  }
