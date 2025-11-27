@@ -1,6 +1,6 @@
 # TP-WEB1: Personajes de Películas 🌐
 **Trabajo Práctico Integrador - Programación Web 1**
-![Estado del Proyecto](https://img.shields.io/badge/Estado-En_Desarrollo-orange)
+![Estado del Proyecto](https://img.shields.io/badge/Estado-Finalizado-green)
 
 ## 📋 Descripción
 
