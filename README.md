@@ -31,6 +31,7 @@ Lenguajes y estándares implementados:
 * ✅ LocalStorage.
 * ✅ Modo oscuro/modo claro.
 * ✅ Pop up de inicio sesión.
+* ✅ Carrousel.
 
 --- 
 
