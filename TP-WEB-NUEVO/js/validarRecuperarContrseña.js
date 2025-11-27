@@ -12,7 +12,7 @@ emailInput.parentElement.appendChild(emailError);
 
 // Crear mensaje de confirmación debajo del input
 let confirmMsg = document.createElement("p");
-confirmMsg.style.color = "green";
+confirmMsg.style.color = "white";
 confirmMsg.style.fontSize = "14px";
 confirmMsg.style.fontWeight = "bold";
 confirmMsg.style.marginTop = "5px";

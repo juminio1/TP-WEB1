@@ -1,22 +1,3 @@
-/* const seccionCategoria = document.getElementById("seccion-categoria");
-
-seccionCategoria.addEventListener("mouseover", (e) => {
-    const articulo = e.target.closest("article");
-    if (!articulo) return;
-
-    if (articulo.id.startsWith("categoria01")) {
-        articulo.style.backgroundColor = "green";
-    }
-});
-
-seccionCategoria.addEventListener("mouseout", (e) => {
-    const articulo = e.target.closest("article");
-    if (!articulo) return;
-
-    if (articulo.id.startsWith("categoria01")) {
-        articulo.style.backgroundColor = "";
-    }
-}); */
 
 // Efectos por categoría
 const efectosCategorias = {
