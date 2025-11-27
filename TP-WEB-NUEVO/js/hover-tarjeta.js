@@ -15,7 +15,7 @@ const efectosCategorias = {
     articulo.style.border = "2px solid red";
   },
   "categoria04": (articulo) => {
-    // Dioses: brilla (sombra y brillo)
+    // Dioses: brilla sombra y brillo
     articulo.style.boxShadow = "0 0 20px yellow";
     articulo.style.transition = "box-shadow 0.3s";
   },
