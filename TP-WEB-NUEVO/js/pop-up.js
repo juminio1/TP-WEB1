@@ -38,10 +38,10 @@ window.addEventListener('click', (e) => {
 window.addEventListener("message", (event) => {
   if (event.data === "cerrarLogin") {
 
-    // Ocultar el modal
+    // Oculta el modal
     loginModal.style.display = "none";
 
-    // Eliminar el iframe como hacés siempre
+    // Elimina el iframe como hacés siempre
     if (loginIframe) {
       modalContent.removeChild(loginIframe);
       loginIframe = null;

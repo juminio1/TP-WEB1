@@ -342,5 +342,20 @@
 
     }
 
+    .formulario {
+        margin: 50px auto; 
+    }
+
+    .fila-inline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .box {
+        max-width: 900px;
+        margin: 40px auto;
+    }
 
  }
