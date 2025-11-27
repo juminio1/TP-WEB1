@@ -52,6 +52,9 @@
 
     }
 
+}
+
+
     #seccion-categoria {
        display: grid;
        grid-template-columns: repeat(1, 1fr);
@@ -145,7 +148,7 @@
 
 
 
- }
+ 
 
  @media screen and (min-width: 48rem) and (max-width: 64rem) {
     * {
@@ -342,20 +345,6 @@
 
     }
 
-    .formulario {
-        margin: 50px auto; 
-    }
-
-    .fila-inline {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 15px;
-    }
-
-    .box {
-        max-width: 900px;
-        margin: 40px auto;
-    }
+    
 
  }
