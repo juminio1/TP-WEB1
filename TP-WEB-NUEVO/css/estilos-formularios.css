@@ -21,7 +21,6 @@ body.light-theme {
 }
 
 .formulario {
-  /* background-color: #fff; */
   padding: 30px;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,12 +28,18 @@ body.light-theme {
   width: 100%;
   max-width: 380px;
 }
+#datosPersonales{
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 550px;
+}
 
 h2 {
   text-align: center;
-  /* color: #333; */
   color: white;
-  /* margin-bottom: 25px;*/
   padding-bottom: 14px;
   font-size: 24px;
 }
@@ -59,9 +64,7 @@ input[type="password"] {
   font-size: 16px;
 }
 
-#repit-cont {
-  padding-top: 10px;
-}
+
 
 .form-contraseña {
   position: relative;
@@ -260,6 +263,26 @@ hr {
   background-color: #f0f0f0;
   
 }
+
+.input-grupo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+ 
+.input-grupo p {
+  color: red;
+  font-size: 13px;
+  margin: 4px 0 0 0;
+  padding: 0;
+}
+ 
+
 .fila-inline {
-  position: relative; /* Para que la lista se posicione respecto al contenedor */
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: flex-start; 
+  position: relative;
+  
 }
