@@ -34,7 +34,7 @@ Lenguajes y estándares implementados:
 
 --- 
 
-## ✒️ Autores 
+## ✒️ Integrantes 
 * **[Julieta Miño](https://github.com/juminio1)** - *Desarrollo y Maquetado*
 * **[Emir Martínez](https://github.com/Emiir91)** - *Desarrollo y Maquetado*
 * **[Esteban Bogado](https://github.com/EstebanBogado)** - *Desarrollo y Maquetado*
