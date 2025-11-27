@@ -30,6 +30,8 @@
     display: none;
  }
 
+ 
+
  #label_toggle {
     position: relative;
     display: flex;
@@ -217,5 +219,3 @@ body.light-theme .articulo-categoria .detalle-articulo p {
     object-fit: fill;
     padding-top: 5%;
  }
-
- 

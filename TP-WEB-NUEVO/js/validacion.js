@@ -149,14 +149,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const nombre = form.querySelector('input[placeholder="Nombre"]');
         const apellido = form.querySelector('input[placeholder="Apellido"]');
         const tipo = form.querySelector('input[placeholder="Tipo"]');
-        const documento = form.querySelector('input[placeholder="Número de documento"]');
         const telefono = form.querySelector('input[placeholder="Teléfono celular"]');
+        const documento = form.querySelector('input[placeholder="Sólo números"]');
         const email = form.querySelector('input[type="email"]');
+        let mensaje = document.createElement("p");
 
         // Validación de campos vacíos
-        if (!nombre.value.trim()) {
+        if (nombre.value.trim()) {
             isValid = false;
-            errorMessages.push("El campo Nombre es obligatorio.");
+            mensaje.textContent("Dato cargado correctamente");
+        } if (!nombre.value.trim()) {
+            isValid = false;
+            mensaje.textContent("El campo Nombre es obligatorio.");
         }
         if (!apellido.value.trim()) {
             isValid = false;
@@ -194,30 +198,26 @@ document.addEventListener("DOMContentLoaded", function () {
             form.submit(); // Envía el formulario si todo está correcto
         }
     });
-});
-
-
-  document.addEventListener("DOMContentLoaded", function () {
     const tipoInput = document.getElementById("tipoInput");
     const tipoLista = document.getElementById("tipoLista");
 
     // Mostrar/ocultar lista al hacer clic en el input
     tipoInput.addEventListener("click", function () {
-      tipoLista.style.display = tipoLista.style.display === "none" ? "block" : "none";
+        tipoLista.style.display = tipoLista.style.display === "none" ? "block" : "none";
     });
 
     // Asignar valor al input al seleccionar un elemento
     tipoLista.querySelectorAll("li").forEach(function (item) {
-      item.addEventListener("click", function () {
-        tipoInput.value = this.textContent;
-        tipoLista.style.display = "none"; // Ocultar lista después de seleccionar
-      });
+        item.addEventListener("click", function () {
+            tipoInput.value = this.textContent;
+            tipoLista.style.display = "none"; // Ocultar lista después de seleccionar
+        });
     });
 
     // Ocultar lista si se hace clic fuera
     document.addEventListener("click", function (event) {
-      if (!tipoInput.contains(event.target) && !tipoLista.contains(event.target)) {
-        tipoLista.style.display = "none";
-      }
+        if (!tipoInput.contains(event.target) && !tipoLista.contains(event.target)) {
+            tipoLista.style.display = "none";
+        }
     });
-  });
+});
