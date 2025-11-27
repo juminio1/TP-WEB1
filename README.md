@@ -6,7 +6,7 @@
 
 Este repositorio contiene el trabajo práctico integrador para la materia **Programación Web 1**.
 
-El objetivo de este proyecto fue desarrollar un sitio web informativo sobre personajes de películas. El sitio organiza el contenido en cuatro categorías principales: Superhéroes, Villanos, Antihéroes y Animales. Actualmente cuenta con un catálogo de 12 personajes por categoría, incluyendo una ficha con una breve descripción de cada uno.
+El objetivo de este proyecto fue desarrollar un sitio web informativo sobre personajes de películas. El sitio organiza el contenido en cinco categorías principales: Superhéroes, Villanos, Antihéroes, Dioses y Animales. Actualmente cuenta con un catálogo de 12 personajes por categoría, incluyendo una ficha con una breve descripción de cada uno.
 
 El sitio cumple con los requisitos de maquetado semántico, uso de hojas de estilo y diseño adaptable a dispositivos móviles.
 
