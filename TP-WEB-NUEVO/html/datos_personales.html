@@ -42,10 +42,20 @@
     <form class="form">
       <div class="fila-inline">
         <input type="text" class="datosInput" placeholder="Nombre" required>
-        <!-- <input type="text" class="datosInput" placeholder="Apellido" required> -->
+        <input type="text" class="datosInput" placeholder="Apellido" required>
       </div>
       <div class="fila-inline">
-        <input type="text" class="datosInput" placeholder="Tipo" required>
+
+        <input type="text" class="datosInput" id="tipoInput" placeholder="Tipo" required readonly>
+        <ul id="tipoLista"
+          style="display: none; list-style: none; padding: 0; margin: 0; border: 1px solid #ccc; position: absolute; background: #fff; width: 200px; z-index: 9999;">
+          <li>DNI</li>
+          <li>PASAPORTE</li>
+          <li>CEDULA</li>
+          <li>CUIT</li>
+          <li>CUIL</li>
+        </ul>
+
         <input type="text" class="datosInput" placeholder="Número de documento" required>
         <input type="date" class="datosInput">
       </div>

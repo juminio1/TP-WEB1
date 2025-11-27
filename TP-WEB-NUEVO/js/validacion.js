@@ -2,134 +2,222 @@
 // ----------------------
 // ELEMENTOS
 // ----------------------
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
+// const emailInput = document.getElementById("email");
+// const passwordInput = document.getElementById("password");
 
-const btnIngresar = document.getElementById("btnIngresar");      // puede no existir
-const btnRegistrarse = document.getElementById("btnRegistrarse"); // puede no existir
+// const btnIngresar = document.getElementById("btnIngresar");      // puede no existir
+// const btnRegistrarse = document.getElementById("btnRegistrarse"); // puede no existir
 
-// Lugares para mensajes de error
-let emailError = document.createElement("p");
-emailError.style.color = "red";
-emailError.style.fontSize = "13px";
+// // Lugares para mensajes de error
+// let emailError = document.createElement("p");
+// emailError.style.color = "red";
+// emailError.style.fontSize = "13px";
 
-let passError = document.createElement("p");
-passError.style.color = "red";
-passError.style.fontSize = "13px";
+// let passError = document.createElement("p");
+// passError.style.color = "red";
+// passError.style.fontSize = "13px";
 
-// Insertar debajo de los inputs
-emailInput.parentElement.appendChild(emailError);
-passwordInput.parentElement.appendChild(passError);
+// // Insertar debajo de los inputs
+// emailInput.parentElement.appendChild(emailError);
+// passwordInput.parentElement.appendChild(passError);
 
-// ----------------------
-// VALIDAR EMAIL
-// ----------------------
-function validarEmail(email) {
-    const regexEmail = /^[^\s@]+@[^\s@]+\.(com|org|net)$/;
-    return regexEmail.test(email);
-}
+// // ----------------------
+// // VALIDAR EMAIL
+// // ----------------------
+// function validarEmail(email) {
+//     const regexEmail = /^[^\s@]+@[^\s@]+\.(com|org|net)$/;
+//     return regexEmail.test(email);
+// }
 
-// ----------------------
-// VALIDAR PASSWORD
-// ----------------------
-function validarPassword(pass) {
-    const regexPass =
-        /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#?!%$])[A-Za-z\d#?!%$]{8,12}$/;
-    return regexPass.test(pass);
-}
+// // ----------------------
+// // VALIDAR PASSWORD
+// // ----------------------
+// function validarPassword(pass) {
+//     const regexPass =
+//         /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#?!%$])[A-Za-z\d#?!%$]{8,12}$/;
+//     return regexPass.test(pass);
+// }
 
 // ----------------------
 // VALIDAR FORMULARIO
 // ----------------------
-function validarFormulario() {
-    const email = emailInput.value.trim();
-    const pass = passwordInput.value.trim();
 
-    let emailValido = false;
-    let passValida = false;
+// function validarFormulario() {
+//     const email = emailInput.value.trim();
+//     const pass = passwordInput.value.trim();
 
-    // VALIDACIÓN DE EMAIL
-    if (email === "") {
-        emailInput.style.border = "2px solid red";
-        emailError.textContent = "El email es obligatorio.";
-    } else if (!validarEmail(email)) {
-        emailInput.style.border = "2px solid red";
-        emailError.textContent = "Formato de email inválido (.com, .net, .org).";
-    } else {
-        emailInput.style.border = "2px solid green";
-        emailError.textContent = "";
-        emailValido = true;
-    }
+//     let emailValido = false;
+//     let passValida = false;
 
-    // VALIDACIÓN DE CONTRASEÑA
-    if (pass === "") {
-        passwordInput.style.border = "2px solid red";
-        passError.textContent = "La contraseña es obligatoria.";
-    } else if (!validarPassword(pass)) {
-        passwordInput.style.border = "2px solid red";
-        passError.textContent =
-            "Debe tener 8-12 caracteres, mayúscula, minúscula, número y símbolo.";
-    } else {
-        passwordInput.style.border = "2px solid green";
-        passError.textContent = "";
-        passValida = true;
-    }
+//     // VALIDACIÓN DE EMAIL
+//     if (email === "") {
+//         emailInput.style.border = "2px solid red";
+//         emailError.textContent = "El email es obligatorio.";
+//     } else if (!validarEmail(email)) {
+//         emailInput.style.border = "2px solid red";
+//         emailError.textContent = "Formato de email inválido (.com, .net, .org).";
+//     } else {
+//         emailInput.style.border = "2px solid green";
+//         emailError.textContent = "";
+//         emailValido = true;
+//     }
 
-    // HABILITAR / DESHABILITAR BOTÓN LOGIN (solo si existe)
-    if (btnIngresar) {
-        btnIngresar.disabled = !(emailValido && passValida);
-    }
+//     // VALIDACIÓN DE CONTRASEÑA
+//     if (pass === "") {
+//         passwordInput.style.border = "2px solid red";
+//         passError.textContent = "La contraseña es obligatoria.";
+//     } else if (!validarPassword(pass)) {
+//         passwordInput.style.border = "2px solid red";
+//         passError.textContent =
+//             "Debe tener 8-12 caracteres, mayúscula, minúscula, número y símbolo.";
+//     } else {
+//         passwordInput.style.border = "2px solid green";
+//         passError.textContent = "";
+//         passValida = true;
+//     }
 
-    // HABILITAR / DESHABILITAR BOTÓN REGISTRO (solo si existe)
-    if (btnRegistrarse) {
-        btnRegistrarse.disabled = !(emailValido && passValida);
-    }
-}
+//     // HABILITAR / DESHABILITAR BOTÓN LOGIN (solo si existe)
+//     if (btnIngresar) {
+//         btnIngresar.disabled = !(emailValido && passValida);
+//     }
 
-// EVENTOS
-emailInput.addEventListener("input", validarFormulario);
-passwordInput.addEventListener("input", validarFormulario);
+//     // HABILITAR / DESHABILITAR BOTÓN REGISTRO (solo si existe)
+//     if (btnRegistrarse) {
+//         btnRegistrarse.disabled = !(emailValido && passValida);
+//     }
+// }
 
-// ----------------------
-// ACCIÓN AL ENVIAR FORMULARIO
-// ----------------------
-const form = document.querySelector("form");
+// // EVENTOS
+// emailInput.addEventListener("input", validarFormulario);
+// passwordInput.addEventListener("input", validarFormulario);
 
-form.addEventListener("submit", function(e) {
-    e.preventDefault();
+// // ----------------------
+// // ACCIÓN AL ENVIAR FORMULARIO
+// // ----------------------
+// const form = document.querySelector("form");
 
-    // Si existe EL BOTÓN DE LOGIN (página iniciar sesión)
-    if (btnIngresar && !btnIngresar.disabled) {
-        window.parent.postMessage("cerrarLogin", "*");
-    }
+// form.addEventListener("submit", function(e) {
+//     e.preventDefault();
 
-    // Si existe EL BOTÓN DE REGISTRO (página registrarse)
-    if (btnRegistrarse && !btnRegistrarse.disabled) {
-        alert("Usuario registrado con éxito. Se le ha enviado un correo");
+//     // Si existe EL BOTÓN DE LOGIN (página iniciar sesión)
+//     if (btnIngresar && !btnIngresar.disabled) {
+//         window.parent.postMessage("cerrarLogin", "*");
+//     }
 
-        // LIMPIAR FORMULARIO
-        emailInput.value = "";
-        passwordInput.value = "";
+//     // Si existe EL BOTÓN DE REGISTRO (página registrarse)
+//     if (btnRegistrarse && !btnRegistrarse.disabled) {
+//         alert("Usuario registrado con éxito. Se le ha enviado un correo");
 
-        emailInput.style.border = "";
-        passwordInput.style.border = "";
+//         // LIMPIAR FORMULARIO
+//         emailInput.value = "";
+//         passwordInput.value = "";
 
-        emailError.textContent = "";
-        passError.textContent = "";
+//         emailInput.style.border = "";
+//         passwordInput.style.border = "";
 
-        btnRegistrarse.disabled = true;
-    }
-});
+//         emailError.textContent = "";
+//         passError.textContent = "";
 
-// funcion ojo de contraseña
-const inputPassword = document.getElementById("password");
-    const botonMostrar = document.getElementById("mostrar");
- 
-    botonMostrar.addEventListener("click", function () {
-        if (inputPassword.type === "password") {
-            inputPassword.type = "text";   // Muestra la contraseña
+//         btnRegistrarse.disabled = true;
+//     }
+// });
+
+// // funcion ojo de contraseña
+// const inputPassword = document.getElementById("password");
+//     const botonMostrar = document.getElementById("mostrar");
+
+//     botonMostrar.addEventListener("click", function () {
+//         if (inputPassword.type === "password") {
+//             inputPassword.type = "text";   // Muestra la contraseña
+//         } else {
+//             inputPassword.type = "password"; // Oculta la contraseña
+//             botonMostrar.textContent = "👁"; // Vuelve al ícono original
+//         }
+//     });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita el envío automático
+
+        let isValid = true;
+        let errorMessages = [];
+
+        // Seleccionamos los inputs
+        const nombre = form.querySelector('input[placeholder="Nombre"]');
+        const apellido = form.querySelector('input[placeholder="Apellido"]');
+        const tipo = form.querySelector('input[placeholder="Tipo"]');
+        const documento = form.querySelector('input[placeholder="Número de documento"]');
+        const telefono = form.querySelector('input[placeholder="Teléfono celular"]');
+        const email = form.querySelector('input[type="email"]');
+
+        // Validación de campos vacíos
+        if (!nombre.value.trim()) {
+            isValid = false;
+            errorMessages.push("El campo Nombre es obligatorio.");
+        }
+        if (!apellido.value.trim()) {
+            isValid = false;
+            errorMessages.push("El campo Nombre es obligatorio.");
+        }
+        if (!tipo.value.trim()) {
+            isValid = false;
+            errorMessages.push("El campo Tipo es obligatorio.");
+        }
+
+        if (!documento.value.trim()) {
+            isValid = false;
+            errorMessages.push("El campo Número de documento es obligatorio.");
+        }
+
+        // Validación de teléfono (solo números y mínimo 8 dígitos)
+        const telefonoRegex = /^[0-9]{8,15}$/;
+        if (!telefonoRegex.test(telefono.value.trim())) {
+            isValid = false;
+            errorMessages.push("El teléfono debe contener solo números y tener entre 8 y 15 dígitos.");
+        }
+
+        // Validación de email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value.trim())) {
+            isValid = false;
+            errorMessages.push("El email no tiene un formato válido.");
+        }
+
+        // Mostrar errores o enviar formulario
+        if (!isValid) {
+            alert("Errores encontrados:\n" + errorMessages.join("\n"));
         } else {
-            inputPassword.type = "password"; // Oculta la contraseña
-            botonMostrar.textContent = "👁"; // Vuelve al ícono original
+            alert("Formulario válido. ¡Datos enviados!");
+            form.submit(); // Envía el formulario si todo está correcto
         }
     });
+});
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const tipoInput = document.getElementById("tipoInput");
+    const tipoLista = document.getElementById("tipoLista");
+
+    // Mostrar/ocultar lista al hacer clic en el input
+    tipoInput.addEventListener("click", function () {
+      tipoLista.style.display = tipoLista.style.display === "none" ? "block" : "none";
+    });
+
+    // Asignar valor al input al seleccionar un elemento
+    tipoLista.querySelectorAll("li").forEach(function (item) {
+      item.addEventListener("click", function () {
+        tipoInput.value = this.textContent;
+        tipoLista.style.display = "none"; // Ocultar lista después de seleccionar
+      });
+    });
+
+    // Ocultar lista si se hace clic fuera
+    document.addEventListener("click", function (event) {
+      if (!tipoInput.contains(event.target) && !tipoLista.contains(event.target)) {
+        tipoLista.style.display = "none";
+      }
+    });
+  });

@@ -246,3 +246,15 @@ hr {
   cursor: pointer;
 }
 
+
+#tipoLista li {
+  padding: 8px;
+  cursor: pointer;
+}
+#tipoLista li:hover {
+  background-color: #f0f0f0;
+  
+}
+.fila-inline {
+  position: relative; /* Para que la lista se posicione respecto al contenedor */
+}
