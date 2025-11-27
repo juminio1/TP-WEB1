@@ -5,6 +5,7 @@
 }
 
 body {
+  background-image: --bg-imagen;
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   color: #222;

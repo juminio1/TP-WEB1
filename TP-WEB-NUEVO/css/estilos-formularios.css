@@ -1,3 +1,5 @@
+@import url("temas-colores-fuentes.css");
+
 body {
   background-image: url('/assets/img/FondoFinal.jpg');
   background-size: cover;
@@ -13,9 +15,9 @@ body {
   height: 100vh;
 }
 
-body.light-theme{
+body.light-theme {
 
- background-image: --bg-imagen-light;
+  background-image: --bg-imagen-light;
 }
 
 .formulario {
@@ -48,16 +50,16 @@ input[type="password"] {
 
 }
 
-.input-contraseña{
-    width: 100%;
-    padding: 12px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-} 
+.input-contraseña {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-#repit-cont{
+#repit-cont {
   padding-top: 10px;
 }
 
@@ -66,16 +68,16 @@ input[type="password"] {
   margin-bottom: 40px;
 }
 
-.ojo-mostrar{
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    color: #888;
-    padding: 0;
+.ojo-mostrar {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  padding: 0;
 }
 
 .recuperar-contraseña {
@@ -99,10 +101,13 @@ input[type="password"] {
   /* pone la manito en el cursos para hacer clic*/
   font-size: 1rem;
   font-weight: bold;
-  /* ensancha la letra*/
   letter-spacing: 0.5px;
-  /* especio entre letras*/
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+
 }
 
 .registrarse {
@@ -245,4 +250,3 @@ hr {
   font-size: 14px;
   cursor: pointer;
 }
-

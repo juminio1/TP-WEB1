@@ -107,8 +107,9 @@ form.addEventListener("submit", function(e) {
     if (btnRegistrarse && !btnRegistrarse.disabled) {
         alert("Usuario registrado con éxito. Se le ha enviado un correo");
 
+        window.location.href = "/html/datos_personales.html";
         // LIMPIAR FORMULARIO
-        emailInput.value = "";
+        emailInput.value = ""; 
         passwordInput.value = "";
 
         emailInput.style.border = "";
