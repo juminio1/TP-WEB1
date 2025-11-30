@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datos Personales</title>
+ 
+  <link rel="stylesheet" href="/TrabajoPracticoGrupo16Pw1/css/estilos-formularios.css">
+
+</head>
+
+<body>
+  <div id="datosPersonales" >
+    <h2 class="titulo">Datos personales</h2>
+    <br>
+    <form class="form">
+      <div class="fila-inline">
+        <input type="text" class="datosInput" placeholder="Nombre" >
+        <input type="text" class="datosInput" placeholder="Apellido" >
+      </div>
+      <div class="fila-inline">
+
+      <input type="text" class="datosInput" id="tipoInput" placeholder="Tipo"  readonly>
+        <ul id="tipoLista"
+          style="display: none; list-style: none; padding: 0; margin: 0; border: 1px solid #ccc; position: absolute; background: #fff; width: 200px; z-index: 9999;">
+          <li>DNI</li>
+          <li>PASAPORTE</li>
+          <li>CEDULA</li>
+          <li>CUIT</li>
+          <li>CUIL</li>
+        </ul>
+        <input type="text" class="datosInput" placeholder="Sólo números" >
+        <input type="date" class="datosInput">
+      </div>
+      <div class="fila-inline">
+        <input type="text" class="datosInput" placeholder="Teléfono celular" >
+        <input type="email" class="datosInput" placeholder="Email secundario" >
+      </div>
+      <div class="fila">
+        <button type="submit" class="boton-azul" disabled> GUARDAR CAMBIOS  </button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <script src="/TrabajoPracticoGrupo16Pw1/js/validacionDatosPersonales.js"></script>
+</body>
+
+</html>

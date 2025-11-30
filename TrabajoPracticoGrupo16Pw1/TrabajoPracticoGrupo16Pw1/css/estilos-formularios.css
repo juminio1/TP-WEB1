@@ -1,0 +1,288 @@
+@import url("temas-colores-fuentes.css");
+
+body {
+  background-image: url('/TrabajoPracticoGrupo16Pw1/assets/img/FondoFinal.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.light-theme {
+
+  background-image: --bg-imagen-light;
+}
+
+.formulario {
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 380px;
+}
+#datosPersonales{
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 100%;
+  max-width: 550px;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  padding-bottom: 14px;
+  font-size: 24px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+
+}
+
+.input-contraseña {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+
+.form-contraseña {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ojo-mostrar {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  padding: 0;
+}
+
+.recuperar-contraseña {
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+  /*color: #007bff;*/
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.boton-azul {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(215, 248, 25);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* pone la manito en el cursos para hacer clic*/
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+
+}
+
+.registrarse {
+  text-align: center;
+  font-size: 1rem;
+  /*color: #555;*/
+  color: white
+}
+
+.terminos-condiciones {
+  text-align: center;
+  font-size: 0.8rem;
+  /*color: #777;*/
+  color: white;
+  line-height: 1.4;
+  /* separa , interlineado*/
+
+}
+
+a {
+  /*color: #007bff;*/
+  color: rgb(215, 248, 25);
+  text-decoration: none;
+  /* le saca el subyarado a los href*/
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  /* al posicionarse en los href aparece el subrayado*/
+}
+
+.texto-indica {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  /* Interlineado */
+  margin-bottom: 25px;
+}
+
+.box {
+  max-width: 700px;
+  margin: 0px auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+
+.ruta {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+
+.titulo {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 12px 0 18px 0;
+}
+
+/* formularios */
+.form {
+  width: 100%;
+}
+
+
+.fila {
+  margin-bottom: 16px;
+}
+
+
+.fila-inline {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* labels */
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #fff8f8;
+}
+
+.datosInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* botones */
+.btn {
+  background-color: #007b;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.datosBtn {
+  background-color: #007b;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.btn-sec {
+  background: #f2f2f2;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+#tipoLista li {
+  padding: 8px;
+  cursor: pointer;
+}
+#tipoLista li:hover {
+  background-color: #f0f0f0;
+  
+}
+
+.input-grupo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+ 
+.input-grupo p {
+  color: red;
+  font-size: 13px;
+  margin: 4px 0 0 0;
+  padding: 0;
+}
+ 
+
+.fila-inline {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: flex-start; 
+  position: relative;
+  
+}

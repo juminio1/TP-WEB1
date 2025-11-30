@@ -1,0 +1,221 @@
+﻿﻿ @import url("temas-colores-fuentes.css");
+
+ * {
+    margin: 0%;
+    /* padding: 0%; */
+ }
+
+ body {
+    background-image: var(--bg-imagen);
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;      
+    display: flex;          
+    flex-direction: column; 
+}
+
+ main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+ }
+
+ /* --- MODO OSCURO --- */
+
+ #toggle {
+    display: none;
+ }
+
+ 
+
+ #label_toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* Para centrar el ícono dentro de su propia cajita */
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 15px;
+    color: blueviolet;
+    transition: color 0.3s ease;
+ }
+
+ .btn-flotante {
+    display: flex;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+
+ }
+
+ .btn-flotante img {
+    width: 75%;
+    height: auto;
+ }
+
+ .btn-flotante:hover {
+    background-color: #625e76;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+ }
+
+ .articulo-categoria {
+    border: solid 1px var(--borde-color);
+    background-color: var(--card-bg);
+    color: var(--txt-color);
+    text-align: justify;
+    padding: 20px;
+
+ }
+
+ #qr-code {
+    width: 100px;
+    height: 100px;
+ }
+
+ #seccion-categoria {
+    gap: 2em;
+    padding: 20px;
+    align-items: stretch;
+ }
+
+ .item-valor-portada {
+    width: 100%;
+    height: 700px;
+    object-fit: fill;
+    padding-top: 5%;
+ }
+
+ .abrir-menu {
+    background-color: rgba(0, 0, 0, 0.01);
+    color: white;
+    border: 0;
+    width: 10px;
+    justify-content: right;
+    text-decoration: none;
+ }
+
+ .cerrar-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 0;
+ }
+
+
+ body.light-theme .cerrar-menu {
+    color: --color-txt;
+    background-color: rgba(189, 140, 62, 0.8);
+ }
+
+ 
+body.light-theme .articulo-categoria,
+body.light-theme .articulo-categoria .item-valor-autor,
+body.light-theme .articulo-categoria .item-valor-descripcion,
+body.light-theme .articulo-categoria .detalle-articulo h4,
+body.light-theme .articulo-categoria .detalle-articulo p {
+    color: #dee2e6 ;
+}
+
+.detalle-articulo h4,
+.detalle-articulo p {
+    color: gray; 
+}
+
+ /* TITULO DE LOS PERSONAJES*/
+ .item-valor-nombre {
+    color:  white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Roboto Mono";
+
+ }
+
+ /* AUTORES */
+ .item-valor-autor {
+    color: var(--txt-color);
+    text-align: center;
+    font-size: 1.02rem;
+ }
+
+ .item-valor-descripcion {
+    color: var(--txt-color);
+    padding-bottom: 8px;
+    font-size: 1.1rem;
+    padding-top: 20px;
+ }
+
+
+ /* RATING */
+ .item-valor-rating {
+    display: block;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+ }
+
+ /* HABILIDAD , CARACTER , ORIGEN , ROPA , RAZA */
+ .detalle-articulo h4 {
+    padding: 5px;
+    font-size: 1.2rem;
+
+ }
+
+ .btn-flotante {
+    font-size: 14px;
+    max-width: 5em;
+    right: 20px;
+ }
+
+ #seccion-categoria {
+    min-height: 100%;
+ }
+
+ .fullscreen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-image: var(--bg-imagen);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+ }
+
+
+ .fullscreen .item-valor-portada {
+    width: auto;
+    height: auto;
+    padding: 0;
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+ }
+
+ .fullscreen .item-valor-nombre,
+ .fullscreen .item-valor-autor,
+ .fullscreen .item-valor-descripcion,
+ .fullscreen .item-valor-rating,
+ .fullscreen .detalle-articulo {
+    display: none;
+ }
+
+ .item-valor-portada-fullscreen {
+    width: 50%;
+    height: 700px;
+    object-fit: fill;
+    padding-top: 5%;
+ }

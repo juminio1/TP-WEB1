@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="/TrabajoPracticoGrupo16Pw1/css/estilos-formularios.css">
+
+
+</head>
+
+<body class="light-theme">
+
+
+    <div id="login">
+
+        <h2>Iniciar sesión</h2>
+
+        <form>
+
+            <div class="form-email">
+                <input type="email" id="email" name="email" placeholder="Email*">
+            </div>
+            <br>
+
+            <div class="form-contraseña">
+                <input class="input-contraseña" type="password" id="password" name="password" placeholder="Contraseña*">
+                <span id="mostrar" class="ojo-mostrar">👁</span>
+            </div>
+
+            <div>
+                <a href="../html/olvidaste_tu_contraseña.html" class="recuperar-contraseña">¿Olvidaste tu contraseña?</a>
+            </div>
+
+
+            <div>
+                <button type="submit" class="boton-azul" id="btnIngresar" disabled>INICIAR SESIÓN</button>
+            </div>
+
+            <p class="registrarse">¿No tenes cuenta? <a href="registrarse.html" target="_parent">Registrate</a></p>
+            <p class="terminos-condiciones">
+                Al continuar, confirmo que he leído los
+                <a href="terminosYcondiciones">Terminos y Condiciones</a> y las
+                <a href="politicas">Políticas de Privacidad</a>
+            </p>
+
+        </form>
+    </div>
+
+    <script type="module" src="/TrabajoPracticoGrupo16Pw1/js/validacion.js"></script>
+
+</body>
+
+</html>
